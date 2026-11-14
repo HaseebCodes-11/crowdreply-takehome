@@ -1,0 +1,58 @@
+[
+  {
+    "id": "compass",
+    "name": "Compass",
+    "domain": "compasscrm.io",
+    "category": "Sales CRM",
+    "description": "A sales CRM for small B2B teams."
+  },
+  {
+    "id": "barkandbloom",
+    "name": "Bark & Bloom",
+    "domain": "barkandbloom.co",
+    "category": "Pet grooming products",
+    "description": "Natural grooming products for dogs."
+  },
+  {
+    "id": "fieldnote",
+    "name": "Fieldnote",
+    "domain": "getfieldnote.com",
+    "category": "Research note-taking app",
+    "description": "A note-taking app for user researchers."
+  },
+  {
+    "id": "tasklane",
+    "name": "Tasklane",
+    "domain": "tasklane.io",
+    "category": "Project management software",
+    "description": "Project management software for agencies."
+  },
+  {
+    "id": "lumora",
+    "name": "Lumora",
+    "domain": "lumora.hr",
+    "category": "HR software",
+    "description": "HR and onboarding software for small companies."
+  },
+  {
+    "id": "driftwell",
+    "name": "Driftwell",
+    "domain": "driftwell.app",
+    "category": "Sleep app",
+    "description": "A sleep tracking and wind-down app."
+  },
+  {
+    "id": "nookbox",
+    "name": "Nook-Box",
+    "domain": "nook-box.com",
+    "category": "Home storage",
+    "description": "Modular storage boxes for small flats."
+  },
+  {
+    "id": "peakmint",
+    "name": "Peakmint",
+    "domain": "peakmint.fit",
+    "category": "Fitness app",
+    "description": "Strength training plans for beginners."
+  }
+]

@@ -1,0 +1,4883 @@
+{
+ "batch": "2026-11-09",
+ "vendor": "answers-api",
+ "responses": [
+  {
+   "id": "r_ea016829c8a90f",
+   "brandId": "compass",
+   "model": "chatgpt",
+   "prompt": "best CRM for a small B2B sales team",
+   "fetchedAt": "2026-11-09T10:53:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best CRM for a small B2B sales team\":\n1. **Salesmoor**: good value, with a generous free plan.\n2. **Dealvine**: easy to set up and well liked by small teams.\n3. **Pipewell**: a reliable all-rounder with responsive support.\n4. **Closera**: strong on reporting, with a slightly steeper learning curve.\nYouTube has plenty of walkthrough videos for each option.\n\nSources: [1](https://salesmoor.io/?utm_source=chatgpt.com) [2](https://dealvine.com/blog/best-crm-for-a-small-b2b-sales-team?utm_source=chatgpt.com) [3](https://closera.com/?utm_source=chatgpt.com) See also [salesmoor.io/](https://salesmoor.io/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 1
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewellhq.com",
+     "position": 3
+    },
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_ea016829c8a90f",
+   "brandId": "compass",
+   "model": "chatgpt",
+   "prompt": "best CRM for a small B2B sales team",
+   "fetchedAt": "2026-11-09T10:53:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best CRM for a small B2B sales team\":\n1. **Salesmoor**: good value, with a generous free plan.\n2. **Dealvine**: easy to set up and well liked by small teams.\n3. **Pipewell**: a reliable all-rounder with responsive support.\n4. **Closera**: strong on reporting, with a slightly steeper learning curve.\nYouTube has plenty of walkthrough videos for each option.\n\nSources: [1](https://salesmoor.io/?utm_source=chatgpt.com) [2](https://dealvine.com/blog/best-crm-for-a-small-b2b-sales-team?utm_source=chatgpt.com) [3](https://closera.com/?utm_source=chatgpt.com) See also [salesmoor.io/](https://salesmoor.io/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 1
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewellhq.com",
+     "position": 3
+    },
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_5d819dec8b3319",
+   "brandId": "compass",
+   "model": "perplexity",
+   "prompt": "best CRM for a small B2B sales team",
+   "fetchedAt": "2026-11-09T14:57:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best CRM for a small B2B sales team\":\n1. **Salesmoor**: good value, with a generous free plan.\n2. **Pipewell**: strong on reporting, with a slightly steeper learning curve.\n3. **Holion**: a reliable all-rounder with responsive support.\nG2 lists verified user reviews and comparison grids.\nA clear ideal customer profile works like a compass for every rep.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 1
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 2
+    },
+    {
+     "name": "Holion",
+     "domain": "holion.com",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://salesmoor.io/pricing",
+    "https://pipewell.io/blog/best-crm-for-a-small-b2b-sales-team"
+   ]
+  },
+  {
+   "id": "r_e502b6058b5392",
+   "brandId": "compass",
+   "model": "gemini",
+   "prompt": "best CRM for a small B2B sales team",
+   "fetchedAt": "2026-11-09T11:42:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best CRM for a small B2B sales team\":\n1. **Dealvine**: good value, with a generous free plan.\n2. **Pipewell**: popular for its clean interface and solid integrations.\n3. **Salesmoor**: flexible, though advanced features cost extra.\nG2 lists verified user reviews and comparison grids.\nTreat your weekly pipeline review as a sales compass for the quarter.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 1
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 2
+    },
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/-bla8moE7FrI2eJshRKOp0n8AH2W-7dIGKEXYf3X"
+   ]
+  },
+  {
+   "id": "r_b7fdbf3d8cad3e",
+   "brandId": "compass",
+   "model": "google_aio",
+   "prompt": "best CRM for a small B2B sales team",
+   "fetchedAt": "2026-11-09T10:26:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best CRM for a small B2B sales team\":\n1. **Closera**: popular for its clean interface and solid integrations.\n2. **Salesmoor**: flexible, though advanced features cost extra.\n3. **Pipewell**: good value, with a generous free plan.\nLinkedIn groups are a good source of recommendations from peers.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 1
+    },
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 3
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://www.google.com/url?q=https%3A%2F%2Fsalesmoor.io%2Fpricing&sa=U&ved=2ahUKEwiqE2uL8VGdlIhSF&usg=AOvVaw"
+   ]
+  },
+  {
+   "id": "r_5dc8a89c2d1f77",
+   "brandId": "compass",
+   "model": "google_ai_mode",
+   "prompt": "best CRM for a small B2B sales team",
+   "fetchedAt": "2026-11-09T12:39:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best CRM for a small B2B sales team\":\n1. **Pipewell**: strong on reporting, with a slightly steeper learning curve.\n2. **Dealvine**: flexible, though advanced features cost extra.\n3. **Compass** (compasscrm.io): popular for its clean interface and solid integrations.\n4. **Brinixa**: easy to set up and well liked by small teams.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 1
+    },
+    {
+     "name": "Dealvine",
+     "domain": null,
+     "position": 2
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 3
+    },
+    {
+     "name": "Brinixa",
+     "domain": "brinixa.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://pipewell.io/pricing",
+    "https://dealvine.com/",
+    "https://compasscrm.io/pricing"
+   ]
+  },
+  {
+   "id": "r_6bd33fd04998ef",
+   "brandId": "compass",
+   "model": "chatgpt",
+   "prompt": "CRM with simple pipeline forecasting",
+   "fetchedAt": "2026-11-09T10:04:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"CRM with simple pipeline forecasting\":\n1. **Leadquill**: flexible, though advanced features cost extra.\n2. **Salesmoor**: easy to set up and well liked by small teams.\n3. **Closera**: strong on reporting, with a slightly steeper learning curve.\n4. **Compass** (compasscrm.io): flexible, though advanced features cost extra.\nYou can also search Google for recent reviews before deciding.\n\nSources: [1](https://leadquill.com/blog/crm-with-simple-pipeline-forecasting?utm_source=chatgpt.com) [2](https://closera.com/pricing?utm_source=chatgpt.com) See also [leadquill.com/blog/crm-with-simple-pipeline-forecasting](https://leadquill.com/blog/crm-with-simple-pipeline-forecasting?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Leadquill",
+     "domain": "leadquill.com",
+     "position": 1
+    },
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 2
+    },
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 3
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 4
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_474419c722b2a9",
+   "brandId": "compass",
+   "model": "perplexity",
+   "prompt": "CRM with simple pipeline forecasting",
+   "fetchedAt": "2026-11-09T14:14:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"CRM with simple pipeline forecasting\":\n1. **Closera**: flexible, though advanced features cost extra.\n2. **Leadquill**: easy to set up and well liked by small teams.\n3. **Pipewell**: strong on reporting, with a slightly steeper learning curve.\nG2 lists verified user reviews and comparison grids.\nGood forecasting gives the whole team a compass, not just the managers.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 1
+    },
+    {
+     "name": "Leadquill",
+     "domain": "leadquill.com",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 5
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://closera.com/"
+   ]
+  },
+  {
+   "id": "r_479bef3b395dc4",
+   "brandId": "compass",
+   "model": "gemini",
+   "prompt": "CRM with simple pipeline forecasting",
+   "fetchedAt": "2026-11-09T06:20:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"CRM with simple pipeline forecasting\":\n1. **Leadquill**: flexible, though advanced features cost extra.\n2. **Dealvine**: flexible, though advanced features cost extra.\n3. **Pipewell**: strong on reporting, with a slightly steeper learning curve.\n4. **Compass** (compasscrm.io): popular for its clean interface and solid integrations.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Leadquill",
+     "domain": "leadquill.com",
+     "position": 1
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewellhq.com",
+     "position": 3
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/0RtMEoyJouAY3yRN-QT1KQo0mjdgUwnYbh6pygrR"
+   ]
+  },
+  {
+   "id": "r_8811a6d02a2fae",
+   "brandId": "compass",
+   "model": "google_aio",
+   "prompt": "CRM with simple pipeline forecasting",
+   "fetchedAt": "2026-11-09T10:51:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"CRM with simple pipeline forecasting\":\n1. **Salesmoor**: good value, with a generous free plan.\n2. **Compass** (compasscrm.io): flexible, though advanced features cost extra.\n3. **Dealvine**: good value, with a generous free plan.\n4. **Closera**: good value, with a generous free plan.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Salesmoor",
+     "domain": null,
+     "position": 1
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 2
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 3
+    },
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "/url?q=https%3A%2F%2Fsalesmoor.io%2Fpricing&sa=U&ved=2ahUKEwi4cfwgUpPwYAPEm",
+    "/url?q=https%3A%2F%2Fcompasscrm.io%2F&sa=U&ved=2ahUKEwiulMyad4ELLax0D",
+    "https://www.google.com/url?q=https%3A%2F%2Fclosera.com%2Fpricing&sa=U&ved=2ahUKEwipMnQD80TRboz-s&usg=AOvVaw",
+    "/search?q=CRM%20with%20simple%20pipeline%20forecasting&sca_esv=2ahUKEwixoqiXsqAehJc8f"
+   ]
+  },
+  {
+   "id": "r_29116a62e93f8d",
+   "brandId": "compass",
+   "model": "google_ai_mode",
+   "prompt": "CRM with simple pipeline forecasting",
+   "fetchedAt": "2026-11-09T16:30:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"CRM with simple pipeline forecasting\":\n1. **Pipewell**: flexible, though advanced features cost extra.\n2. **Closera**: good value, with a generous free plan.\n3. **Dealvine**: popular for its clean interface and solid integrations.\n4. **Salesmoor**: strong on reporting, with a slightly steeper learning curve.\n5. **Jaskumo**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 1
+    },
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 2
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 3
+    },
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 4
+    },
+    {
+     "name": "Jaskumo",
+     "domain": "jaskumo.com",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://dealvine.com/"
+   ]
+  },
+  {
+   "id": "r_558ba48cb69bbf",
+   "brandId": "compass",
+   "model": "chatgpt",
+   "prompt": "alternatives to spreadsheets for tracking deals",
+   "fetchedAt": "2026-11-09T16:40:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"alternatives to spreadsheets for tracking deals\":\n1. **Leadquill**: popular for its clean interface and solid integrations.\n2. **Salesmoor**: good value, with a generous free plan.\n3. **Pipewell**: popular for its clean interface and solid integrations.\n4. **Dealvine**: strong on reporting, with a slightly steeper learning curve.\nLinkedIn groups are a good source of recommendations from peers.\n\nSources: [1](https://leadquill.com/?utm_source=chatgpt.com) See also [leadquill.com/](https://leadquill.com/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Leadquill",
+     "domain": "leadquill.com",
+     "position": 1
+    },
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewellhq.com",
+     "position": 3
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 4
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_834d45d617976f",
+   "brandId": "compass",
+   "model": "perplexity",
+   "prompt": "alternatives to spreadsheets for tracking deals",
+   "fetchedAt": "2026-11-09T10:23:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"alternatives to spreadsheets for tracking deals\":\n1. **Leadquill**: easy to set up and well liked by small teams.\n2. **Closera**: easy to set up and well liked by small teams.\n3. **Galova**: easy to set up and well liked by small teams.\nYouTube has plenty of walkthrough videos for each option.\nTreat your weekly pipeline review as a sales compass for the quarter.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Leadquill",
+     "domain": "leadquill.com",
+     "position": 1
+    },
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 2
+    },
+    {
+     "name": "Galova",
+     "domain": "galova.com",
+     "position": 3
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 4
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_e0975ae522e1c0",
+   "brandId": "compass",
+   "model": "gemini",
+   "prompt": "alternatives to spreadsheets for tracking deals",
+   "fetchedAt": "2026-11-09T08:07:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"alternatives to spreadsheets for tracking deals\":\n1. **Closera**: popular for its clean interface and solid integrations.\n2. **Dealvine**: good value, with a generous free plan.\nG2 lists verified user reviews and comparison grids.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 1
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 2
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/9p61a00aERfu4FnJOdy4KTrQW8xDYgWVpV32cIUQ",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/1fFjcELHxSt0yiZmk_itfvhlOd-GTSArRojDwQkH"
+   ]
+  },
+  {
+   "id": "r_d0c874e05a9d16",
+   "brandId": "compass",
+   "model": "google_aio",
+   "prompt": "alternatives to spreadsheets for tracking deals",
+   "fetchedAt": "2026-11-09T16:55:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"alternatives to spreadsheets for tracking deals\":\n1. **Closera**: a reliable all-rounder with responsive support.\n2. **Dealvine**: popular for its clean interface and solid integrations.\n3. **Leadquill**: easy to set up and well liked by small teams.\n4. **Compass** (compasscrm.io): a reliable all-rounder with responsive support.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 1
+    },
+    {
+     "name": "Dealvine",
+     "domain": "dealvine.com",
+     "position": 2
+    },
+    {
+     "name": "Leadquill",
+     "domain": null,
+     "position": 3
+    },
+    {
+     "name": "Compass",
+     "domain": "compasscrm.io",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://closera.com/pricing",
+    "https://dealvine.com/blog/alternatives-to-spreadsheets-for-tracking-deals"
+   ]
+  },
+  {
+   "id": "r_7b75a59961366e",
+   "brandId": "compass",
+   "model": "google_ai_mode",
+   "prompt": "alternatives to spreadsheets for tracking deals",
+   "fetchedAt": "2026-11-09T12:35:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"alternatives to spreadsheets for tracking deals\":\n1. **Closera**: easy to set up and well liked by small teams.\n2. **Salesmoor**: a reliable all-rounder with responsive support.\n3. **Pipewell**: good value, with a generous free plan.\n4. **Leadquill**: strong on reporting, with a slightly steeper learning curve.\n5. **Quorion**: a reliable all-rounder with responsive support.\nLinkedIn groups are a good source of recommendations from peers.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Closera",
+     "domain": "closera.com",
+     "position": 1
+    },
+    {
+     "name": "Salesmoor",
+     "domain": "salesmoor.io",
+     "position": 2
+    },
+    {
+     "name": "Pipewell",
+     "domain": "pipewell.io",
+     "position": 3
+    },
+    {
+     "name": "Leadquill",
+     "domain": null,
+     "position": 4
+    },
+    {
+     "name": "Quorion",
+     "domain": "quorion.com",
+     "position": 5
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://closera.com/pricing",
+    "https://salesmoor.io/blog/alternatives-to-spreadsheets-for-tracking-deals",
+    "https://pipewell.io/blog/alternatives-to-spreadsheets-for-tracking-deals"
+   ]
+  },
+  {
+   "id": "r_242a2e14dd313e",
+   "brandId": "barkandbloom",
+   "model": "chatgpt",
+   "prompt": "best natural dog shampoo",
+   "fetchedAt": "2026-11-09T15:30:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best natural dog shampoo\":\n1. **Pawlish**: flexible, though advanced features cost extra.\n2. **Furrowfinch**: easy to set up and well liked by small teams.\n3. **Bark & Bloom** (barkandbloom.co): flexible, though advanced features cost extra.\n\nSources: [1](https://furrowfinch.com/pricing?utm_source=chatgpt.com) [2](https://barkandbloom.co/?utm_source=chatgpt.com) See also [furrowfinch.com/pricing](https://furrowfinch.com/pricing?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 1
+    },
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 2
+    },
+    {
+     "name": "Bark & Bloom",
+     "domain": "barkandbloom.co",
+     "position": 3
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_2d32ab2da9e28c",
+   "brandId": "barkandbloom",
+   "model": "perplexity",
+   "prompt": "best natural dog shampoo",
+   "fetchedAt": "2026-11-09T09:51:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best natural dog shampoo\":\n1. **Bark & Bloom** (barkandbloom.co): flexible, though advanced features cost extra.\n2. **Pawlish**: popular for its clean interface and solid integrations.\n3. **Coatly**: flexible, though advanced features cost extra.\n4. **Snoutwell**: easy to set up and well liked by small teams.\n5. **Eskixa**: easy to set up and well liked by small teams.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Bark & Bloom",
+     "domain": "barkandbloom.co",
+     "position": 1
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 2
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 3
+    },
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 4
+    },
+    {
+     "name": "Eskixa",
+     "domain": "eskixa.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://barkandbloom.co/pricing",
+    "https://snoutwell.com/pricing",
+    "https://eskixa.com/"
+   ]
+  },
+  {
+   "id": "r_33cfb26515699d",
+   "brandId": "barkandbloom",
+   "model": "gemini",
+   "prompt": "best natural dog shampoo",
+   "fetchedAt": "2026-11-09T06:56:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best natural dog shampoo\":\n1. **Coatly**: flexible, though advanced features cost extra.\n2. **Pawlish**: easy to set up and well liked by small teams.\n3. **Mudpaw**: a reliable all-rounder with responsive support.\n4. Many reviewers recommend barkandbloom.co; it is good value, with a generous free plan.\n5. **Snoutwell**: flexible, though advanced features cost extra.\n6. **Orlett**: strong on reporting, with a slightly steeper learning curve.\nSeveral of these are also sold on Amazon, often with discounts.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 1
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 2
+    },
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 3
+    },
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 5
+    },
+    {
+     "name": "Orlett",
+     "domain": "orlett.com",
+     "position": 6
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 7
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/BYj0oeCN-xEBtYuAJEsfzByQIoQJ3mDTrfkodS50",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/YP2057XkDhgDbrJs-hLNOJ_g0beikYV-Lsei4b7z",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/N6VAmqz8jRvJZP14IHpvwyppaDmOZJDUmmlwhAH8"
+   ]
+  },
+  {
+   "id": "r_0f3c99e4cf2588",
+   "brandId": "barkandbloom",
+   "model": "google_aio",
+   "prompt": "best natural dog shampoo",
+   "fetchedAt": "2026-11-09T07:58:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best natural dog shampoo\":\n1. **Bark & Bloom** (barkandbloom.co): easy to set up and well liked by small teams.\n2. **Pawlish**: popular for its clean interface and solid integrations.\n3. **Coatly**: flexible, though advanced features cost extra.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Bark & Bloom",
+     "domain": "barkandbloom.co",
+     "position": 1
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 2
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fbarkandbloom.co%2F&ref=aio",
+    "/url?q=https%3A%2F%2Fpawlish.com%2Fpricing&sa=U&ved=2ahUKEwidjQt9xtiSNd1PA",
+    "/goto?url=https%3A%2F%2Fcoatly.com%2Fblog%2Fbest-natural-dog-shampoo&ref=aio"
+   ]
+  },
+  {
+   "id": "r_1eaf3cebe44400",
+   "brandId": "barkandbloom",
+   "model": "google_ai_mode",
+   "prompt": "best natural dog shampoo",
+   "fetchedAt": "2026-11-09T07:09:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best natural dog shampoo\":\n1. **Furrowfinch**: flexible, though advanced features cost extra.\n2. **Mudpaw**: good value, with a generous free plan.\n3. **Snoutwell**: good value, with a generous free plan.\n4. **Marwick**: good value, with a generous free plan.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 1
+    },
+    {
+     "name": "Mudpaw",
+     "domain": null,
+     "position": 2
+    },
+    {
+     "name": "Snoutwell",
+     "domain": null,
+     "position": 3
+    },
+    {
+     "name": "Marwick",
+     "domain": "marwick.com",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://furrowfinch.com/",
+    "https://mudpaw.co/"
+   ]
+  },
+  {
+   "id": "r_f31af935952729",
+   "brandId": "barkandbloom",
+   "model": "chatgpt",
+   "prompt": "gentle grooming products for puppies",
+   "fetchedAt": "2026-11-09T14:30:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"gentle grooming products for puppies\":\n1. **Snoutwell**: a reliable all-rounder with responsive support.\n2. **Furrowfinch**: a reliable all-rounder with responsive support.\n3. **Pawlish**: good value, with a generous free plan.\n4. **Coatly**: flexible, though advanced features cost extra.\n5. **Nimett**: strong on reporting, with a slightly steeper learning curve.\nYouTube has plenty of walkthrough videos for each option.\n\nSources: [1](https://snoutwell.com/pricing?utm_source=chatgpt.com) [2](https://furrowfinch.com/pricing?utm_source=chatgpt.com) [3](https://coatly.com/blog/gentle-grooming-products-for-puppies?utm_source=chatgpt.com) See also [snoutwell.com/pricing](https://snoutwell.com/pricing?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 1
+    },
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 2
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 3
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 4
+    },
+    {
+     "name": "Nimett",
+     "domain": "nimett.com",
+     "position": 5
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 6
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_91c309eccabc04",
+   "brandId": "barkandbloom",
+   "model": "perplexity",
+   "prompt": "gentle grooming products for puppies",
+   "fetchedAt": "2026-11-09T11:14:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"gentle grooming products for puppies\":\n1. Many reviewers recommend barkandbloom.co; it is strong on reporting, with a slightly steeper learning curve.\n2. **Pawlish**: a reliable all-rounder with responsive support.\n3. **Snoutwell**: easy to set up and well liked by small teams.\n4. **Mudpaw**: strong on reporting, with a slightly steeper learning curve.\n5. **Furrowfinch**: flexible, though advanced features cost extra.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 2
+    },
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 3
+    },
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 4
+    },
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 5
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://barkandbloom.co/",
+    "https://snoutwell.com/blog/gentle-grooming-products-for-puppies",
+    "https://furrowfinch.com/"
+   ]
+  },
+  {
+   "id": "r_8ef1bd330c24d0",
+   "brandId": "barkandbloom",
+   "model": "gemini",
+   "prompt": "gentle grooming products for puppies",
+   "fetchedAt": "2026-11-09T09:58:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"gentle grooming products for puppies\":\n1. **Coatly**: a reliable all-rounder with responsive support.\n2. **Pawlish**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 1
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_ce2fb97ef73729",
+   "brandId": "barkandbloom",
+   "model": "google_aio",
+   "prompt": "gentle grooming products for puppies",
+   "fetchedAt": "2026-11-09T07:17:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"gentle grooming products for puppies\":\n1. **Pawlish**: popular for its clean interface and solid integrations.\n2. **Coatly**: a reliable all-rounder with responsive support.\n3. **Brinora**: good value, with a generous free plan.\nSeveral of these are also sold on Amazon, often with discounts.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 1
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 2
+    },
+    {
+     "name": "Brinora",
+     "domain": "brinora.com",
+     "position": 3
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_876eee2add5122",
+   "brandId": "barkandbloom",
+   "model": "google_ai_mode",
+   "prompt": "gentle grooming products for puppies",
+   "fetchedAt": "2026-11-09T15:00:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"gentle grooming products for puppies\":\n1. **Mudpaw**: good value, with a generous free plan.\n2. **Coatly**: good value, with a generous free plan.\n3. **Furrowfinch**: easy to set up and well liked by small teams.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 1
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 2
+    },
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://furrowfinch.com/"
+   ]
+  },
+  {
+   "id": "r_4ac408ee6beb8b",
+   "brandId": "barkandbloom",
+   "model": "chatgpt",
+   "prompt": "dog shampoo for sensitive skin",
+   "fetchedAt": "2026-11-09T14:58:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"dog shampoo for sensitive skin\":\n1. **Furrowfinch**: flexible, though advanced features cost extra.\n2. Many reviewers recommend barkandbloom.co; it is good value, with a generous free plan.\n3. **Mudpaw**: good value, with a generous free plan.\n4. **Coatly**: flexible, though advanced features cost extra.\n5. **Pawlish**: popular for its clean interface and solid integrations.\nYouTube has plenty of walkthrough videos for each option.\n\nSources: [1](https://coatly.com/?utm_source=chatgpt.com) See also [coatly.com/](https://coatly.com/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 1
+    },
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 3
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 4
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 5
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 6
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_6d9e2df3ec7d8d",
+   "brandId": "barkandbloom",
+   "model": "perplexity",
+   "prompt": "dog shampoo for sensitive skin",
+   "fetchedAt": "2026-11-09T10:58:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"dog shampoo for sensitive skin\":\n1. **Coatly**: good value, with a generous free plan.\n2. **Furrowfinch**: a reliable all-rounder with responsive support.\n3. **Mudpaw**: popular for its clean interface and solid integrations.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 1
+    },
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 2
+    },
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://mudpaw.co/pricing"
+   ]
+  },
+  {
+   "id": "r_5db3911525fe3c",
+   "brandId": "barkandbloom",
+   "model": "gemini",
+   "prompt": "dog shampoo for sensitive skin",
+   "fetchedAt": "2026-11-09T10:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"dog shampoo for sensitive skin\":\n1. **Mudpaw**: strong on reporting, with a slightly steeper learning curve.\n2. **Snoutwell**: strong on reporting, with a slightly steeper learning curve.\n3. **Coatly**: easy to set up and well liked by small teams.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 1
+    },
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 2
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/jVtH7cHyl9bLBb_eF9Qow6UhFxXlHzIlSusjbLDy"
+   ]
+  },
+  {
+   "id": "r_6b2f385ad8d984",
+   "brandId": "barkandbloom",
+   "model": "google_aio",
+   "prompt": "dog shampoo for sensitive skin",
+   "fetchedAt": "2026-11-09T11:25:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"dog shampoo for sensitive skin\":\n1. **Mudpaw**: popular for its clean interface and solid integrations.\n2. **Coatly**: flexible, though advanced features cost extra.\n3. **Snoutwell**: popular for its clean interface and solid integrations.\n4. **Pawlish**: a reliable all-rounder with responsive support.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Mudpaw",
+     "domain": "mudpaw.co",
+     "position": 1
+    },
+    {
+     "name": "Coatly",
+     "domain": "coatly.com",
+     "position": 2
+    },
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 3
+    },
+    {
+     "name": "Pawlish",
+     "domain": "pawlish.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://www.google.com/url?q=https%3A%2F%2Fmudpaw.co%2Fpricing&sa=U&ved=2ahUKEwiA-mMc0EvlvRcsL&usg=AOvVaw",
+    "/url?q=https%3A%2F%2Fcoatly.com%2Fpricing&sa=U&ved=2ahUKEwiVmfo5nZ6Zm5bvQ",
+    "/search?q=dog%20shampoo%20for%20sensitive%20skin&sca_esv=2ahUKEwiYR60fOxv1pRbBs"
+   ]
+  },
+  {
+   "id": "r_958edad821e06a",
+   "brandId": "barkandbloom",
+   "model": "google_ai_mode",
+   "prompt": "dog shampoo for sensitive skin",
+   "fetchedAt": "2026-11-09T10:21:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"dog shampoo for sensitive skin\":\n1. **Furrowfinch**: flexible, though advanced features cost extra.\n2. **Snoutwell**: a reliable all-rounder with responsive support.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Furrowfinch",
+     "domain": "furrowfinch.com",
+     "position": 1
+    },
+    {
+     "name": "Snoutwell",
+     "domain": "snoutwell.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_e8ac5fc8a67d1d",
+   "brandId": "fieldnote",
+   "model": "chatgpt",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T15:03:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Fieldnote** (getfieldnote.com): easy to set up and well liked by small teams.\n2. **Quillbase**: easy to set up and well liked by small teams.\n3. **Scribewell**: good value, with a generous free plan.\n4. **Lumenote**: flexible, though advanced features cost extra.\n5. **Margina**: good value, with a generous free plan.\nYou can also search Google for recent reviews before deciding.\nChatGPT can make mistakes. Check important info.\n\nSources: [1](https://getfieldnote.com/?utm_source=chatgpt.com) [2](https://scribewell.io/pricing?utm_source=chatgpt.com) [3](https://margina.app/pricing?utm_source=chatgpt.com) See also [getfieldnote.com/](https://getfieldnote.com/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 1
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 2
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 3
+    },
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 4
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    },
+    {
+     "name": "ChatGPT",
+     "domain": null,
+     "position": 7
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_e8ac5fc8a67d1d",
+   "brandId": "fieldnote",
+   "model": "chatgpt",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T15:03:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Fieldnote** (getfieldnote.com): easy to set up and well liked by small teams.\n2. **Quillbase**: easy to set up and well liked by small teams.\n3. **Scribewell**: good value, with a generous free plan.\n4. **Lumenote**: flexible, though advanced features cost extra.\n5. **Margina**: good value, with a generous free plan.\nYou can also search Google for recent reviews before deciding.\nChatGPT can make mistakes. Check important info.\n\nSources: [1](https://getfieldnote.com/?utm_source=chatgpt.com) [2](https://scribewell.io/pricing?utm_source=chatgpt.com) [3](https://margina.app/pricing?utm_source=chatgpt.com) See also [getfieldnote.com/](https://getfieldnote.com/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 1
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 2
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 3
+    },
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 4
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    },
+    {
+     "name": "ChatGPT",
+     "domain": null,
+     "position": 7
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_3859b1da471f15",
+   "brandId": "fieldnote",
+   "model": "perplexity",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T09:01:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Margina**: strong on reporting, with a slightly steeper learning curve.\n2. **Scribewell**: good value, with a generous free plan.\n3. **Quillbase**: easy to set up and well liked by small teams.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 1
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 2
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 3
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_b98aaff62c425a",
+   "brandId": "fieldnote",
+   "model": "gemini",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T16:13:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Margina**: easy to set up and well liked by small teams.\n2. **Fieldnote** (getfieldnote.com): good value, with a generous free plan.\n3. **Scribewell**: a reliable all-rounder with responsive support.\n4. **Lumenote**: good value, with a generous free plan.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 1
+    },
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 2
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 3
+    },
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/glwPIbNxvHyUvIEVvycp_wXooz--jd7U_LKcYQcY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/VPCqkEXOnlOlqCtLjSxL4w1VF62rKNiW4u1j_ZXz",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/NQMbh4RkJtyBaTTPTxolWJX0fH4KutQcfF6R4pV0"
+   ]
+  },
+  {
+   "id": "r_cec57efd12f236",
+   "brandId": "fieldnote",
+   "model": "google_aio",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T13:02:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Lumenote**: flexible, though advanced features cost extra.\n2. **Scribewell**: strong on reporting, with a slightly steeper learning curve.\n3. **Inkpond**: strong on reporting, with a slightly steeper learning curve.\n4. **Quillbase**: popular for its clean interface and solid integrations.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 1
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 2
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 3
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_cec57efd12f236",
+   "brandId": "fieldnote",
+   "model": "google_aio",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T13:02:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Lumenote**: flexible, though advanced features cost extra.\n2. **Scribewell**: strong on reporting, with a slightly steeper learning curve.\n3. **Inkpond**: strong on reporting, with a slightly steeper learning curve.\n4. **Quillbase**: popular for its clean interface and solid integrations.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 1
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 2
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 3
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_c189aeb4819346",
+   "brandId": "fieldnote",
+   "model": "google_ai_mode",
+   "prompt": "best note taking app for user research",
+   "fetchedAt": "2026-11-09T08:00:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best note taking app for user research\":\n1. **Quillbase**: popular for its clean interface and solid integrations.\n2. **Margina**: a reliable all-rounder with responsive support.\n3. **Scribewell**: popular for its clean interface and solid integrations.\n4. **Inkpond**: strong on reporting, with a slightly steeper learning curve.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 1
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 2
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 3
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://inkpond.com/blog/best-note-taking-app-for-user-research",
+    "https://www.reddit.com/r/research-note-taki/comments/214228"
+   ]
+  },
+  {
+   "id": "r_0c46919fefffd0",
+   "brandId": "fieldnote",
+   "model": "chatgpt",
+   "prompt": "tool to organise interview notes and tag insights",
+   "fetchedAt": "2026-11-09T14:25:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"tool to organise interview notes and tag insights\":\n1. **Margina**: a reliable all-rounder with responsive support.\n2. **Quillbase**: good value, with a generous free plan.\n3. **Inkpond**: popular for its clean interface and solid integrations.\n4. **Jaskumo**: popular for its clean interface and solid integrations.\nReddit threads are a good place to read honest user experiences.\n\nSources: [1](https://margina.app/blog/tool-to-organise-interview-notes-and-tag-insights?utm_source=chatgpt.com) [2](https://quillbase.com/?utm_source=chatgpt.com) [3](https://jaskumo.com/blog/tool-to-organise-interview-notes-and-tag-insights?utm_source=chatgpt.com) [4](https://www.reddit.com/r/research-note-taki/comments/317510?utm_source=chatgpt.com) See also [margina.app/blog/tool-to-organise-interview-notes-and-tag-insights](https://margina.app/blog/tool-to-organise-interview-notes-and-tag-insights?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 1
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 2
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 3
+    },
+    {
+     "name": "Jaskumo",
+     "domain": "jaskumo.com",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_40bc18bdeddb21",
+   "brandId": "fieldnote",
+   "model": "perplexity",
+   "prompt": "tool to organise interview notes and tag insights",
+   "fetchedAt": "2026-11-09T06:59:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"tool to organise interview notes and tag insights\":\n1. **Fieldnote** (getfieldnote.com): strong on reporting, with a slightly steeper learning curve.\n2. **Margina**: easy to set up and well liked by small teams.\n3. **Scribewell**: strong on reporting, with a slightly steeper learning curve.\nWikipedia has a useful overview of the method itself.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 1
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 2
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 3
+    },
+    {
+     "name": "Wikipedia",
+     "domain": "wikipedia.org",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://getfieldnote.com/features"
+   ]
+  },
+  {
+   "id": "r_7c2061594bde24",
+   "brandId": "fieldnote",
+   "model": "gemini",
+   "prompt": "tool to organise interview notes and tag insights",
+   "fetchedAt": "2026-11-09T17:59:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"tool to organise interview notes and tag insights\":\n1. **Inkpond**: a reliable all-rounder with responsive support.\n2. **Margina**: good value, with a generous free plan.\n3. **Scribewell**: flexible, though advanced features cost extra.\n4. **Fieldnote** (getfieldnote.com): strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 1
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 2
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 3
+    },
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/XfQ5tUuSVuyxBuT2z8KqGrhaoNi_G1EzEhj5IQnE",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/OCn-ehjlAvsL5_ID7SBoCeVDuDjpZEt6AD-MvF5V"
+   ]
+  },
+  {
+   "id": "r_3b08cefd511f52",
+   "brandId": "fieldnote",
+   "model": "google_aio",
+   "prompt": "tool to organise interview notes and tag insights",
+   "fetchedAt": "2026-11-09T06:45:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"tool to organise interview notes and tag insights\":\n1. **Lumenote**: good value, with a generous free plan.\n2. **Inkpond**: easy to set up and well liked by small teams.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 1
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 2
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "/url?q=https%3A%2F%2Flumenote.com%2F&sa=U&ved=2ahUKEwia2Y3dwzcWY6vX6",
+    "/url?q=https%3A%2F%2Finkpond.com%2F&sa=U&ved=2ahUKEwiDt9bPed9x9-O_E",
+    "/search?q=tool%20to%20organise%20interview%20notes%20and%20tag%20insights&sca_esv=2ahUKEwiXdFRruxj9PFQ44"
+   ]
+  },
+  {
+   "id": "r_6f5bc8fbecfb96",
+   "brandId": "fieldnote",
+   "model": "google_ai_mode",
+   "prompt": "tool to organise interview notes and tag insights",
+   "fetchedAt": "2026-11-09T14:21:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"tool to organise interview notes and tag insights\":\n1. **Margina**: strong on reporting, with a slightly steeper learning curve.\n2. **Fieldnote** (getfieldnote.com): flexible, though advanced features cost extra.\n3. **Lumenote**: popular for its clean interface and solid integrations.\n4. **Scribewell**: a reliable all-rounder with responsive support.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 1
+    },
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 2
+    },
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 3
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://margina.app/",
+    "https://getfieldnote.com/"
+   ]
+  },
+  {
+   "id": "r_c1be6497412d9a",
+   "brandId": "fieldnote",
+   "model": "chatgpt",
+   "prompt": "research repository for small product teams",
+   "fetchedAt": "2026-11-09T11:52:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"research repository for small product teams\":\n1. **Scribewell**: good value, with a generous free plan.\n2. **Quillbase**: flexible, though advanced features cost extra.\nYou can also search Google for recent reviews before deciding.\nChatGPT can make mistakes. Check important info.\n\nSources: [1](https://scribewell.io/?utm_source=chatgpt.com) See also [scribewell.io/](https://scribewell.io/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 1
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 2
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 3
+    },
+    {
+     "name": "ChatGPT",
+     "domain": null,
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_b9ed687c45c2a5",
+   "brandId": "fieldnote",
+   "model": "perplexity",
+   "prompt": "research repository for small product teams",
+   "fetchedAt": "2026-11-09T11:29:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"research repository for small product teams\":\n1. **Fieldnote** (getfieldnote.com): strong on reporting, with a slightly steeper learning curve.\n2. **Margina**: popular for its clean interface and solid integrations.\n3. **Inkpond**: flexible, though advanced features cost extra.\n4. **Galwick**: flexible, though advanced features cost extra.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 1
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 2
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 3
+    },
+    {
+     "name": "Galwick",
+     "domain": "galwick.com",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://margina.app/"
+   ]
+  },
+  {
+   "id": "r_8463131919f8be",
+   "brandId": "fieldnote",
+   "model": "gemini",
+   "prompt": "research repository for small product teams",
+   "fetchedAt": "2026-11-09T12:51:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"research repository for small product teams\":\n1. **Lumenote**: a reliable all-rounder with responsive support.\n2. **Quillbase**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Lumenote",
+     "domain": "lumenote.com",
+     "position": 1
+    },
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 2
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/KeApzvJ7VsGX-Wdk8wUgnY7nhVUrsAHMW2-RlEdp"
+   ]
+  },
+  {
+   "id": "r_62fed624b8471a",
+   "brandId": "fieldnote",
+   "model": "google_aio",
+   "prompt": "research repository for small product teams",
+   "fetchedAt": "2026-11-09T09:32:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"research repository for small product teams\":\n1. **Scribewell**: flexible, though advanced features cost extra.\n2. **Inkpond**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 1
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_62fed624b8471a",
+   "brandId": "fieldnote",
+   "model": "google_aio",
+   "prompt": "research repository for small product teams",
+   "fetchedAt": "2026-11-09T09:32:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"research repository for small product teams\":\n1. **Scribewell**: flexible, though advanced features cost extra.\n2. **Inkpond**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 1
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_4f78f4f8236c0a",
+   "brandId": "fieldnote",
+   "model": "google_ai_mode",
+   "prompt": "research repository for small product teams",
+   "fetchedAt": "2026-11-09T10:53:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"research repository for small product teams\":\n1. **Quillbase**: easy to set up and well liked by small teams.\n2. **Inkpond**: strong on reporting, with a slightly steeper learning curve.\n3. **Fieldnote** (getfieldnote.com): easy to set up and well liked by small teams.\n4. **Scribewell**: flexible, though advanced features cost extra.\n5. **Margina**: easy to set up and well liked by small teams.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Quillbase",
+     "domain": "quillbase.com",
+     "position": 1
+    },
+    {
+     "name": "Inkpond",
+     "domain": "inkpond.com",
+     "position": 2
+    },
+    {
+     "name": "Fieldnote",
+     "domain": "getfieldnote.com",
+     "position": 3
+    },
+    {
+     "name": "Scribewell",
+     "domain": "scribewell.io",
+     "position": 4
+    },
+    {
+     "name": "Margina",
+     "domain": "margina.app",
+     "position": 5
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://inkpond.com/"
+   ]
+  },
+  {
+   "id": "r_66ee1c418e08b8",
+   "brandId": "tasklane",
+   "model": "chatgpt",
+   "prompt": "best project management software for agencies",
+   "fetchedAt": "2026-11-09T08:21:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best project management software for agencies\":\n1. **Kanbrik**: flexible, though advanced features cost extra.\n2. **Boardhaven**: flexible, though advanced features cost extra.\n3. **Trellova**: strong on reporting, with a slightly steeper learning curve.\n4. **Tasklane** (tasklane.io): popular for its clean interface and solid integrations.\n5. **Taskwyn**: a reliable all-rounder with responsive support.\n6. **Dovora**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.\nYouTube has plenty of walkthrough videos for each option.\nCapterra has side-by-side pricing comparisons.\n\nSources: [1](https://trellova.com/?utm_source=chatgpt.com) [2](https://tasklane.io/?utm_source=chatgpt.com) [3](https://taskwyn.com/blog/best-project-management-software-for-agencies?utm_source=chatgpt.com) See also [trellova.com/](https://trellova.com/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 1
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 2
+    },
+    {
+     "name": "Trellova",
+     "domain": "trellova.com",
+     "position": 3
+    },
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 4
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 5
+    },
+    {
+     "name": "Dovora",
+     "domain": "dovora.com",
+     "position": 6
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 7
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 8
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 9
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_3542f3d724d425",
+   "brandId": "tasklane",
+   "model": "perplexity",
+   "prompt": "best project management software for agencies",
+   "fetchedAt": "2026-11-09T07:55:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best project management software for agencies\":\n1. **Tasklane** (tasklane.io): popular for its clean interface and solid integrations.\n2. **Sprintmoss**: easy to set up and well liked by small teams.\n3. **Taskwyn**: easy to set up and well liked by small teams.\n4. **Plandrift**: easy to set up and well liked by small teams.\n5. **Kanbrik**: strong on reporting, with a slightly steeper learning curve.\nMost of them integrate with Slack for notifications.\nG2 lists verified user reviews and comparison grids.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 1
+    },
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.com",
+     "position": 2
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 3
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.com",
+     "position": 4
+    },
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 5
+    },
+    {
+     "name": "Slack",
+     "domain": "slack.com",
+     "position": 6
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 7
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 8
+    }
+   ],
+   "citations": [
+    "https://sprintmoss.app/",
+    "https://taskwyn.com/blog/best-project-management-software-for-agencies",
+    "https://plandrift.io/pricing",
+    "https://kanbrik.com/pricing",
+    "https://www.g2.com/categories/project-management-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_4559530e7fda0b",
+   "brandId": "tasklane",
+   "model": "gemini",
+   "prompt": "best project management software for agencies",
+   "fetchedAt": "2026-11-09T14:38:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best project management software for agencies\":\n1. **Trellova**: popular for its clean interface and solid integrations.\n2. **Boardhaven**: easy to set up and well liked by small teams.\nCapterra has side-by-side pricing comparisons.\nG2 lists verified user reviews and comparison grids.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Trellova",
+     "domain": "trellova.com",
+     "position": 1
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 2
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://www.g2.com/categories/project-management-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_65182032d97c3b",
+   "brandId": "tasklane",
+   "model": "google_aio",
+   "prompt": "best project management software for agencies",
+   "fetchedAt": "2026-11-09T16:56:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best project management software for agencies\":\n1. **Sprintmoss**: easy to set up and well liked by small teams.\n2. **Kanbrik**: a reliable all-rounder with responsive support.\n3. **Boardhaven**: strong on reporting, with a slightly steeper learning curve.\n4. **Taskwyn**: strong on reporting, with a slightly steeper learning curve.\nSeveral of these are also sold on Amazon, often with discounts.\nYou can also search Google for recent reviews before deciding.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.app",
+     "position": 1
+    },
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 2
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 3
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 4
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 7
+    }
+   ],
+   "citations": [
+    "https://kanbrik.com/pricing",
+    "https://boardhaven.com/",
+    "https://www.reddit.com/r/project-management/comments/758307"
+   ]
+  },
+  {
+   "id": "r_8f608230acd6e6",
+   "brandId": "tasklane",
+   "model": "google_ai_mode",
+   "prompt": "best project management software for agencies",
+   "fetchedAt": "2026-11-09T17:42:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best project management software for agencies\":\n1. **Sprintmoss**: flexible, though advanced features cost extra.\n2. **Tasklane** (tasklane.io): popular for its clean interface and solid integrations.\n3. **Kanbrik**: strong on reporting, with a slightly steeper learning curve.\n4. **Holumo**: a reliable all-rounder with responsive support.\nCapterra has side-by-side pricing comparisons.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.app",
+     "position": 1
+    },
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 2
+    },
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 3
+    },
+    {
+     "name": "Holumo",
+     "domain": null,
+     "position": 4
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_c1e26a855fac81",
+   "brandId": "tasklane",
+   "model": "chatgpt",
+   "prompt": "simple kanban tool for a 10 person team",
+   "fetchedAt": "2026-11-09T09:37:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple kanban tool for a 10 person team\":\n1. **Tasklane** (tasklane.io): strong on reporting, with a slightly steeper learning curve.\n2. **Trellova**: flexible, though advanced features cost extra.\n3. **Taskwyn**: flexible, though advanced features cost extra.\n4. **Fenyx**: a reliable all-rounder with responsive support.\nCapterra has side-by-side pricing comparisons.\nReddit threads are a good place to read honest user experiences.\n\nSources: [1](https://taskwyn.com/blog/simple-kanban-tool-for-a-10-person-team?utm_source=chatgpt.com) [2](https://fenyx.com/?utm_source=chatgpt.com) [3](https://www.reddit.com/r/project-management/comments/337399?utm_source=chatgpt.com) See also [taskwyn.com/blog/simple-kanban-tool-for-a-10-person-team](https://taskwyn.com/blog/simple-kanban-tool-for-a-10-person-team?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 1
+    },
+    {
+     "name": "Trellova",
+     "domain": "trellova.com",
+     "position": 2
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 3
+    },
+    {
+     "name": "Fenyx",
+     "domain": "fenyx.com",
+     "position": 4
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 5
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 6
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_2d04205ada1ce5",
+   "brandId": "tasklane",
+   "model": "perplexity",
+   "prompt": "simple kanban tool for a 10 person team",
+   "fetchedAt": "2026-11-09T12:30:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple kanban tool for a 10 person team\":\n1. **Sprintmoss**: good value, with a generous free plan.\n2. **Plandrift**: a reliable all-rounder with responsive support.\n3. **Boardhaven**: good value, with a generous free plan.\n4. **Marumo**: good value, with a generous free plan.\nMany teams pair these tools with Zoom for weekly check-ins.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.app",
+     "position": 1
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.io",
+     "position": 2
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 3
+    },
+    {
+     "name": "Marumo",
+     "domain": "marumo.com",
+     "position": 4
+    },
+    {
+     "name": "Zoom",
+     "domain": "zoom.us",
+     "position": 5
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://boardhaven.com/"
+   ]
+  },
+  {
+   "id": "r_518201259cdc77",
+   "brandId": "tasklane",
+   "model": "gemini",
+   "prompt": "simple kanban tool for a 10 person team",
+   "fetchedAt": "2026-11-09T16:26:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple kanban tool for a 10 person team\":\n1. **Taskwyn**: a reliable all-rounder with responsive support.\n2. **Sprintmoss**: popular for its clean interface and solid integrations.\n3. **Boardhaven**: a reliable all-rounder with responsive support.\n4. **Tasklane** (tasklane.io): a reliable all-rounder with responsive support.\n5. **Plandrift**: good value, with a generous free plan.\nYou can also search Google for recent reviews before deciding.\nYouTube has plenty of walkthrough videos for each option.\nMany teams pair these tools with Zoom for weekly check-ins.\nCapterra has side-by-side pricing comparisons.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 1
+    },
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.com",
+     "position": 2
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 3
+    },
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 4
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.io",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 7
+    },
+    {
+     "name": "Zoom",
+     "domain": "zoom.us",
+     "position": 8
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 9
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/Bw7lTjz_ltDL_MTdnAUTFjVhUbLJPthvCqAD1VZ_",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/sZPpOjlXgkofiDnl0V6sU3fVMz48WsZpRhSf43jv",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/Z-7H5yOUZEA_RmEkNKC534DkCpSphG3F7-th4pHP",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/TiEKkEVFjxgp7DyhhI9hZOuCwP3dGjyF3JDpKeUa"
+   ]
+  },
+  {
+   "id": "r_33ae344b2b7028",
+   "brandId": "tasklane",
+   "model": "google_aio",
+   "prompt": "simple kanban tool for a 10 person team",
+   "fetchedAt": "2026-11-09T10:48:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple kanban tool for a 10 person team\":\n1. **Kanbrik**: a reliable all-rounder with responsive support.\n2. **Plandrift**: flexible, though advanced features cost extra.\n3. **Taskwyn**: good value, with a generous free plan.\nG2 lists verified user reviews and comparison grids.\nCapterra has side-by-side pricing comparisons.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 1
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.io",
+     "position": 2
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://taskwyn.com/blog/simple-kanban-tool-for-a-10-person-team",
+    "https://www.g2.com/categories/project-management-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_33ae344b2b7028",
+   "brandId": "tasklane",
+   "model": "google_aio",
+   "prompt": "simple kanban tool for a 10 person team",
+   "fetchedAt": "2026-11-09T10:48:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple kanban tool for a 10 person team\":\n1. **Kanbrik**: a reliable all-rounder with responsive support.\n2. **Plandrift**: flexible, though advanced features cost extra.\n3. **Taskwyn**: good value, with a generous free plan.\nG2 lists verified user reviews and comparison grids.\nCapterra has side-by-side pricing comparisons.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 1
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.io",
+     "position": 2
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://taskwyn.com/blog/simple-kanban-tool-for-a-10-person-team",
+    "https://www.g2.com/categories/project-management-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_8871caa2711d12",
+   "brandId": "tasklane",
+   "model": "google_ai_mode",
+   "prompt": "simple kanban tool for a 10 person team",
+   "fetchedAt": "2026-11-09T16:44:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple kanban tool for a 10 person team\":\n1. **Kanbrik**: strong on reporting, with a slightly steeper learning curve.\n2. **Plandrift**: good value, with a generous free plan.\n3. **Taskwyn**: strong on reporting, with a slightly steeper learning curve.\n4. **Trellova**: popular for its clean interface and solid integrations.\n5. **Brinora**: strong on reporting, with a slightly steeper learning curve.\nYou can also search Google for recent reviews before deciding.\nCapterra has side-by-side pricing comparisons.\nSeveral of these are also sold on Amazon, often with discounts.\nMost of them integrate with Slack for notifications.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 1
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.com",
+     "position": 2
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 3
+    },
+    {
+     "name": "Trellova",
+     "domain": "trellova.com",
+     "position": 4
+    },
+    {
+     "name": "Brinora",
+     "domain": "brinora.com",
+     "position": 5
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 6
+    },
+    {
+     "name": "Capterra",
+     "domain": "capterra.com",
+     "position": 7
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 8
+    },
+    {
+     "name": "Slack",
+     "domain": "slack.com",
+     "position": 9
+    }
+   ],
+   "citations": [
+    "https://plandrift.io/",
+    "https://taskwyn.com/"
+   ]
+  },
+  {
+   "id": "r_111da5ed311f2d",
+   "brandId": "tasklane",
+   "model": "chatgpt",
+   "prompt": "project management tool with client portals",
+   "fetchedAt": "2026-11-09T16:31:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"project management tool with client portals\":\n1. **Taskwyn**: strong on reporting, with a slightly steeper learning curve.\n2. **Sprintmoss**: good value, with a generous free plan.\n3. **Boardhaven**: a reliable all-rounder with responsive support.\n4. **Trellova**: popular for its clean interface and solid integrations.\n5. **Tasklane** (tasklane.io): strong on reporting, with a slightly steeper learning curve.\nG2 lists verified user reviews and comparison grids.\nSeveral of these are also sold on Amazon, often with discounts.\nMost of them integrate with Slack for notifications.\n\nSources: [1](https://tasklane.io/features?utm_source=chatgpt.com) [2](https://www.g2.com/categories/project-management-software?order=popular&utm_source=chatgpt.com) See also [tasklane.io/features](https://tasklane.io/features?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 1
+    },
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.app",
+     "position": 2
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 3
+    },
+    {
+     "name": "Trellova",
+     "domain": "trellova.com",
+     "position": 4
+    },
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 5
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 6
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 7
+    },
+    {
+     "name": "Slack",
+     "domain": "slack.com",
+     "position": 8
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_bc096fdc2dda52",
+   "brandId": "tasklane",
+   "model": "perplexity",
+   "prompt": "project management tool with client portals",
+   "fetchedAt": "2026-11-09T12:06:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"project management tool with client portals\":\n1. **Sprintmoss**: good value, with a generous free plan.\n2. **Plandrift**: flexible, though advanced features cost extra.\n3. **Taskwyn**: easy to set up and well liked by small teams.\nYou can also search Google for recent reviews before deciding.\nG2 lists verified user reviews and comparison grids.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.app",
+     "position": 1
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.com",
+     "position": 2
+    },
+    {
+     "name": "Taskwyn",
+     "domain": "taskwyn.com",
+     "position": 3
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 4
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 5
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://sprintmoss.app/blog/project-management-tool-with-client-portals",
+    "https://plandrift.io/",
+    "https://taskwyn.com/blog/project-management-tool-with-client-portals"
+   ]
+  },
+  {
+   "id": "r_b324a2a187ae66",
+   "brandId": "tasklane",
+   "model": "gemini",
+   "prompt": "project management tool with client portals",
+   "fetchedAt": "2026-11-09T07:09:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"project management tool with client portals\":\n1. **Kanbrik**: popular for its clean interface and solid integrations.\n2. **Plandrift**: strong on reporting, with a slightly steeper learning curve.\n3. **Boardhaven**: popular for its clean interface and solid integrations.\n4. **Sprintmoss**: easy to set up and well liked by small teams.\n5. **Orlixa**: good value, with a generous free plan.\nMost of them integrate with Slack for notifications.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 1
+    },
+    {
+     "name": "Plandrift",
+     "domain": "plandrift.com",
+     "position": 2
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 3
+    },
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.com",
+     "position": 4
+    },
+    {
+     "name": "Orlixa",
+     "domain": "orlixa.com",
+     "position": 5
+    },
+    {
+     "name": "Slack",
+     "domain": "slack.com",
+     "position": 6
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 7
+    }
+   ],
+   "citations": [
+    "https://kanbrik.com/blog/project-management-tool-with-client-portals",
+    "https://plandrift.io/pricing",
+    "https://sprintmoss.app/blog/project-management-tool-with-client-portals",
+    "https://orlixa.com/pricing"
+   ]
+  },
+  {
+   "id": "r_d6d72a3fcc0082",
+   "brandId": "tasklane",
+   "model": "google_aio",
+   "prompt": "project management tool with client portals",
+   "fetchedAt": "2026-11-09T17:26:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"project management tool with client portals\":\n1. **Tasklane** (tasklane.io): popular for its clean interface and solid integrations.\n2. **Trellova**: good value, with a generous free plan.\n3. **Sprintmoss**: a reliable all-rounder with responsive support.\n4. **Boardhaven**: a reliable all-rounder with responsive support.\nReddit threads are a good place to read honest user experiences.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Tasklane",
+     "domain": "tasklane.io",
+     "position": 1
+    },
+    {
+     "name": "Trellova",
+     "domain": null,
+     "position": 2
+    },
+    {
+     "name": "Sprintmoss",
+     "domain": "sprintmoss.app",
+     "position": 3
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://trellova.com/pricing",
+    "https://www.reddit.com/r/project-management/comments/235839"
+   ]
+  },
+  {
+   "id": "r_18c38531f2a9de",
+   "brandId": "tasklane",
+   "model": "google_ai_mode",
+   "prompt": "project management tool with client portals",
+   "fetchedAt": "2026-11-09T09:00:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"project management tool with client portals\":\n1. **Kanbrik**: flexible, though advanced features cost extra.\n2. **Boardhaven**: flexible, though advanced features cost extra.\n3. **Trellova**: good value, with a generous free plan.\nYou can also search Google for recent reviews before deciding.\nMany teams pair these tools with Zoom for weekly check-ins.\nG2 lists verified user reviews and comparison grids.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Kanbrik",
+     "domain": "kanbrik.com",
+     "position": 1
+    },
+    {
+     "name": "Boardhaven",
+     "domain": "boardhaven.com",
+     "position": 2
+    },
+    {
+     "name": "Trellova",
+     "domain": "trellova.com",
+     "position": 3
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 4
+    },
+    {
+     "name": "Zoom",
+     "domain": "zoom.us",
+     "position": 5
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 6
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 7
+    }
+   ],
+   "citations": [
+    "https://trellova.com/blog/project-management-tool-with-client-portals",
+    "https://www.g2.com/categories/project-management-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_dc92b236a8cf38",
+   "brandId": "lumora",
+   "model": "chatgpt",
+   "prompt": "best HR software for a 30 person company",
+   "fetchedAt": "2026-11-09T13:19:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best HR software for a 30 person company\":\n1. **Peoplewick**: strong on reporting, with a slightly steeper learning curve.\n2. **Onbordo**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 1
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 2
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 3
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_805ce9418fc937",
+   "brandId": "lumora",
+   "model": "perplexity",
+   "prompt": "best HR software for a 30 person company",
+   "fetchedAt": "2026-11-09T14:01:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best HR software for a 30 person company\":\n1. **Hirebloom**: easy to set up and well liked by small teams.\n2. **Staffora**: strong on reporting, with a slightly steeper learning curve.\n3. **Peoplewick**: a reliable all-rounder with responsive support.\n4. **Dovora**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 1
+    },
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 2
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 3
+    },
+    {
+     "name": "Dovora",
+     "domain": "dovora.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://dovora.com/"
+   ]
+  },
+  {
+   "id": "r_7264fe22ff9a21",
+   "brandId": "lumora",
+   "model": "gemini",
+   "prompt": "best HR software for a 30 person company",
+   "fetchedAt": "2026-11-09T12:45:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best HR software for a 30 person company\":\n1. **Peoplewick**: a reliable all-rounder with responsive support.\n2. **Hirebloom**: popular for its clean interface and solid integrations.\n3. **Teamstead**: strong on reporting, with a slightly steeper learning curve.\n4. **Lumora** (lumora.hr): a reliable all-rounder with responsive support.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 1
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 2
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 3
+    },
+    {
+     "name": "Lumora",
+     "domain": "lumora.hr",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://lumora.hr/features"
+   ]
+  },
+  {
+   "id": "r_63e7f4c72706e8",
+   "brandId": "lumora",
+   "model": "google_aio",
+   "prompt": "best HR software for a 30 person company",
+   "fetchedAt": "2026-11-09T08:20:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best HR software for a 30 person company\":\n1. **Onbordo**: strong on reporting, with a slightly steeper learning curve.\n2. **Lumora** (lumora.hr): a reliable all-rounder with responsive support.\n3. **Teamstead**: a reliable all-rounder with responsive support.\nG2 lists verified user reviews and comparison grids.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 1
+    },
+    {
+     "name": "Lumora",
+     "domain": "lumora.hr",
+     "position": 2
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 3
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fteamstead.com%2Fblog%2Fbest-hr-software-for-a-30-person-company&ref=aio"
+   ]
+  },
+  {
+   "id": "r_82beaf2c94df1c",
+   "brandId": "lumora",
+   "model": "google_ai_mode",
+   "prompt": "best HR software for a 30 person company",
+   "fetchedAt": "2026-11-09T06:23:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best HR software for a 30 person company\":\n1. **Hirebloom**: strong on reporting, with a slightly steeper learning curve.\n2. **Staffora**: easy to set up and well liked by small teams.\n3. **Peoplewick**: popular for its clean interface and solid integrations.\n4. **Onbordo**: strong on reporting, with a slightly steeper learning curve.\n5. **Quorumo**: popular for its clean interface and solid integrations.\nLinkedIn groups are a good source of recommendations from peers.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 1
+    },
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 2
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 3
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 4
+    },
+    {
+     "name": "Quorumo",
+     "domain": "quorumo.com",
+     "position": 5
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://peoplewick.com/pricing",
+    "https://onbordo.com/pricing"
+   ]
+  },
+  {
+   "id": "r_90380cb70e6cf9",
+   "brandId": "lumora",
+   "model": "chatgpt",
+   "prompt": "employee onboarding tool for startups",
+   "fetchedAt": "2026-11-09T09:50:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"employee onboarding tool for startups\":\n1. **Staffora**: easy to set up and well liked by small teams.\n2. **Lumora** (lumora.hr): good value, with a generous free plan.\n3. **Onbordo**: popular for its clean interface and solid integrations.\n4. **Teamstead**: flexible, though advanced features cost extra.\n5. **Hirebloom**: easy to set up and well liked by small teams.\n6. **Holumo**: strong on reporting, with a slightly steeper learning curve.\n\nSources: [1](https://lumora.hr/?utm_source=chatgpt.com) [2](https://onbordo.com/pricing?utm_source=chatgpt.com) [3](https://teamstead.com/blog/employee-onboarding-tool-for-startups?utm_source=chatgpt.com) [4](https://hirebloom.io/?utm_source=chatgpt.com) [5](https://holumo.com/pricing?utm_source=chatgpt.com) See also [lumora.hr/](https://lumora.hr/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 1
+    },
+    {
+     "name": "Lumora",
+     "domain": "lumora.hr",
+     "position": 2
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 3
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 4
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 5
+    },
+    {
+     "name": "Holumo",
+     "domain": "holumo.com",
+     "position": 6
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_74e0f8a081615c",
+   "brandId": "lumora",
+   "model": "perplexity",
+   "prompt": "employee onboarding tool for startups",
+   "fetchedAt": "2026-11-09T06:15:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"employee onboarding tool for startups\":\n1. **Staffora**: good value, with a generous free plan.\n2. **Hirebloom**: flexible, though advanced features cost extra.\n3. **Onbordo**: good value, with a generous free plan.\n4. **Teamstead**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 1
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 2
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 3
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 4
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 5
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://staffora.com/",
+    "https://hirebloom.io/"
+   ]
+  },
+  {
+   "id": "r_3279d2d5161820",
+   "brandId": "lumora",
+   "model": "gemini",
+   "prompt": "employee onboarding tool for startups",
+   "fetchedAt": "2026-11-09T06:52:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"employee onboarding tool for startups\":\n1. **Teamstead**: flexible, though advanced features cost extra.\n2. **Peoplewick**: easy to set up and well liked by small teams.\n3. **Hirebloom**: easy to set up and well liked by small teams.\n4. **Onbordo**: popular for its clean interface and solid integrations.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 1
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 2
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 3
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/oB-dgt-suZdNKttB-hO6FkbuKPsYRxenm60Cbmxw",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/b6fL_UYCt_qyXPDSF3yMAIKZIJ5Rm1yHqLijITsm",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/YMwEoeDX7vJs10ffHDqwihGQ3bgUCQz230oV3A36",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/r9sfnCK3ctUso3Wf99-fBnlOUfj47EDgBnZmx-sf"
+   ]
+  },
+  {
+   "id": "r_50cc94446bba8e",
+   "brandId": "lumora",
+   "model": "google_aio",
+   "prompt": "employee onboarding tool for startups",
+   "fetchedAt": "2026-11-09T12:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"employee onboarding tool for startups\":\n1. **Hirebloom**: strong on reporting, with a slightly steeper learning curve.\n2. **Peoplewick**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 1
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 2
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fhirebloom.io%2Fpricing&ref=aio",
+    "https://www.google.com/url?q=https%3A%2F%2Fpeoplewick.com%2Fblog%2Femployee-onboarding-tool-for-startups&sa=U&ved=2ahUKEwiXdCfpZ7lG4MddV&usg=AOvVaw",
+    "/search?q=employee%20onboarding%20tool%20for%20startups&sca_esv=2ahUKEwid9ut_Nc3de-N7z"
+   ]
+  },
+  {
+   "id": "r_50cc94446bba8e",
+   "brandId": "lumora",
+   "model": "google_aio",
+   "prompt": "employee onboarding tool for startups",
+   "fetchedAt": "2026-11-09T12:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"employee onboarding tool for startups\":\n1. **Hirebloom**: strong on reporting, with a slightly steeper learning curve.\n2. **Peoplewick**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 1
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 2
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fhirebloom.io%2Fpricing&ref=aio",
+    "https://www.google.com/url?q=https%3A%2F%2Fpeoplewick.com%2Fblog%2Femployee-onboarding-tool-for-startups&sa=U&ved=2ahUKEwiXdCfpZ7lG4MddV&usg=AOvVaw",
+    "/search?q=employee%20onboarding%20tool%20for%20startups&sca_esv=2ahUKEwid9ut_Nc3de-N7z"
+   ]
+  },
+  {
+   "id": "r_20c543fb03bba9",
+   "brandId": "lumora",
+   "model": "google_ai_mode",
+   "prompt": "employee onboarding tool for startups",
+   "fetchedAt": "2026-11-09T15:46:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"employee onboarding tool for startups\":\n1. **Staffora**: flexible, though advanced features cost extra.\n2. **Onbordo**: flexible, though advanced features cost extra.\nG2 lists verified user reviews and comparison grids.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 1
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 2
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://www.g2.com/categories/hr-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_0620cfac68cee1",
+   "brandId": "lumora",
+   "model": "chatgpt",
+   "prompt": "simple HR platform with time off tracking",
+   "fetchedAt": "2026-11-09T10:34:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple HR platform with time off tracking\":\n1. **Peoplewick**: strong on reporting, with a slightly steeper learning curve.\n2. **Onbordo**: popular for its clean interface and solid integrations.\n3. **Staffora**: strong on reporting, with a slightly steeper learning curve.\n4. **Hirebloom**: popular for its clean interface and solid integrations.\nG2 lists verified user reviews and comparison grids.\n\nSources: [1](https://peoplewick.com/?utm_source=chatgpt.com) See also [peoplewick.com/](https://peoplewick.com/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 1
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 2
+    },
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 3
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 4
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_22386e1d8da25c",
+   "brandId": "lumora",
+   "model": "perplexity",
+   "prompt": "simple HR platform with time off tracking",
+   "fetchedAt": "2026-11-09T10:41:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple HR platform with time off tracking\":\n1. **Lumora** (lumora.hr): popular for its clean interface and solid integrations.\n2. **Staffora**: flexible, though advanced features cost extra.\n3. **Onbordo**: easy to set up and well liked by small teams.\n4. **Peoplewick**: a reliable all-rounder with responsive support.\n5. **Teamstead**: easy to set up and well liked by small teams.\n6. **Fenion**: good value, with a generous free plan.\nG2 lists verified user reviews and comparison grids.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Lumora",
+     "domain": "lumora.hr",
+     "position": 1
+    },
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 2
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 3
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 4
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 5
+    },
+    {
+     "name": "Fenion",
+     "domain": "fenion.com",
+     "position": 6
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 7
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 8
+    }
+   ],
+   "citations": [
+    "https://lumora.hr/features",
+    "https://staffora.com/blog/simple-hr-platform-with-time-off-tracking",
+    "https://peoplewick.com/blog/simple-hr-platform-with-time-off-tracking",
+    "https://www.g2.com/categories/hr-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_6913b3ea163eed",
+   "brandId": "lumora",
+   "model": "gemini",
+   "prompt": "simple HR platform with time off tracking",
+   "fetchedAt": "2026-11-09T06:46:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple HR platform with time off tracking\":\n1. **Staffora**: popular for its clean interface and solid integrations.\n2. **Hirebloom**: a reliable all-rounder with responsive support.\n3. **Onbordo**: easy to set up and well liked by small teams.\n4. **Teamstead**: good value, with a generous free plan.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 1
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 2
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 3
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 4
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/S1Lgo206Y_p1-7sjT2MlwZwddycM4t-zuk8DoSYC",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/ejlTtXC9QJY2yD8wag925fjcJsiXqxNx8n-k8mD4"
+   ]
+  },
+  {
+   "id": "r_28eef9ed4c6df0",
+   "brandId": "lumora",
+   "model": "google_aio",
+   "prompt": "simple HR platform with time off tracking",
+   "fetchedAt": "2026-11-09T08:44:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple HR platform with time off tracking\":\n1. **Lumora** (lumora.hr): popular for its clean interface and solid integrations.\n2. **Onbordo**: a reliable all-rounder with responsive support.\n3. **Teamstead**: popular for its clean interface and solid integrations.\n4. **Peoplewick**: good value, with a generous free plan.\n5. **Hirebloom**: flexible, though advanced features cost extra.\n6. **Holard**: a reliable all-rounder with responsive support.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Lumora",
+     "domain": "lumora.hr",
+     "position": 1
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 2
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 3
+    },
+    {
+     "name": "Peoplewick",
+     "domain": "peoplewick.com",
+     "position": 4
+    },
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 5
+    },
+    {
+     "name": "Holard",
+     "domain": "holard.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fteamstead.com%2F&ref=aio",
+    "https://www.google.com/url?q=https%3A%2F%2Fpeoplewick.com%2Fblog%2Fsimple-hr-platform-with-time-off-tracking&sa=U&ved=2ahUKEwiONA9PDMLxpUdXU&usg=AOvVaw",
+    "/url?q=https%3A%2F%2Fholard.com%2Fblog%2Fsimple-hr-platform-with-time-off-tracking&sa=U&ved=2ahUKEwi8SffL7Q6jAsHoY"
+   ]
+  },
+  {
+   "id": "r_9018594773c8b9",
+   "brandId": "lumora",
+   "model": "google_ai_mode",
+   "prompt": "simple HR platform with time off tracking",
+   "fetchedAt": "2026-11-09T12:28:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"simple HR platform with time off tracking\":\n1. **Hirebloom**: good value, with a generous free plan.\n2. **Teamstead**: easy to set up and well liked by small teams.\n3. **Onbordo**: strong on reporting, with a slightly steeper learning curve.\n4. **Lumora** (lumora.hr): easy to set up and well liked by small teams.\n5. **Staffora**: popular for its clean interface and solid integrations.\n6. **Jaskixa**: easy to set up and well liked by small teams.\nG2 lists verified user reviews and comparison grids.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Hirebloom",
+     "domain": "hirebloom.io",
+     "position": 1
+    },
+    {
+     "name": "Teamstead",
+     "domain": "teamstead.com",
+     "position": 2
+    },
+    {
+     "name": "Onbordo",
+     "domain": "onbordo.com",
+     "position": 3
+    },
+    {
+     "name": "Lumora",
+     "domain": "lumora.hr",
+     "position": 4
+    },
+    {
+     "name": "Staffora",
+     "domain": "staffora.com",
+     "position": 5
+    },
+    {
+     "name": "Jaskixa",
+     "domain": "jaskixa.com",
+     "position": 6
+    },
+    {
+     "name": "G2",
+     "domain": "g2.com",
+     "position": 7
+    }
+   ],
+   "citations": [
+    "https://hirebloom.io/",
+    "https://lumora.hr/features",
+    "https://jaskixa.com/pricing",
+    "https://www.g2.com/categories/hr-software?order=popular"
+   ]
+  },
+  {
+   "id": "r_666f40737d0da1",
+   "brandId": "driftwell",
+   "model": "chatgpt",
+   "prompt": "best app to improve sleep",
+   "fetchedAt": "2026-11-09T06:35:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best app to improve sleep\":\n1. **Noctily**: popular for its clean interface and solid integrations.\n2. **Slumbra**: a reliable all-rounder with responsive support.\n3. **Driftwell** (driftwell.app): easy to set up and well liked by small teams.\n4. **Maryx**: popular for its clean interface and solid integrations.\n\nSources: [1](https://slumbra.com/?utm_source=chatgpt.com) See also [slumbra.com/](https://slumbra.com/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 1
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 2
+    },
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 3
+    },
+    {
+     "name": "Maryx",
+     "domain": "maryx.com",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_2a1580a1f725ce",
+   "brandId": "driftwell",
+   "model": "perplexity",
+   "prompt": "best app to improve sleep",
+   "fetchedAt": "2026-11-09T09:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best app to improve sleep\":\n1. **Driftwell** (driftwell.app): popular for its clean interface and solid integrations.\n2. **Slumbra**: flexible, though advanced features cost extra.\n3. **Restwave**: popular for its clean interface and solid integrations.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 1
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 2
+    },
+    {
+     "name": "Restwave",
+     "domain": "restwave.com",
+     "position": 3
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://restwave.com/blog/best-app-to-improve-sleep"
+   ]
+  },
+  {
+   "id": "r_d3cd32b9001f8c",
+   "brandId": "driftwell",
+   "model": "gemini",
+   "prompt": "best app to improve sleep",
+   "fetchedAt": "2026-11-09T11:15:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best app to improve sleep\":\n1. **Slumbra**: strong on reporting, with a slightly steeper learning curve.\n2. **Dozely**: flexible, though advanced features cost extra.\n3. **Noctily**: easy to set up and well liked by small teams.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 1
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 2
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 3
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/b9j3hPxLf89S5KuPXlF-4LQ1sHWAHcTjzwUwJ2l3",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/sJAC1ArQp10eI12TG8zmybib2FqK3j6T6IKQZExJ"
+   ]
+  },
+  {
+   "id": "r_06c74d4edb1f32",
+   "brandId": "driftwell",
+   "model": "google_aio",
+   "prompt": "best app to improve sleep",
+   "fetchedAt": "2026-11-09T08:54:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best app to improve sleep\":\n1. **Driftwell** (driftwell.app): a reliable all-rounder with responsive support.\n2. **Dozely**: popular for its clean interface and solid integrations.\n3. **Noctily**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 1
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 2
+    },
+    {
+     "name": "Noctily",
+     "domain": null,
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://www.google.com/url?q=https%3A%2F%2Fnoctily.app%2Fblog%2Fbest-app-to-improve-sleep&sa=U&ved=2ahUKEwiqcRBDvZoph0ygk&usg=AOvVaw"
+   ]
+  },
+  {
+   "id": "r_cb6c4ffc9b974a",
+   "brandId": "driftwell",
+   "model": "google_ai_mode",
+   "prompt": "best app to improve sleep",
+   "fetchedAt": "2026-11-09T08:42:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best app to improve sleep\":\n1. **Hushtide**: a reliable all-rounder with responsive support.\n2. **Noctily**: easy to set up and well liked by small teams.\n3. **Dozely**: flexible, though advanced features cost extra.\n4. **Driftwell** (driftwell.app): popular for its clean interface and solid integrations.\n5. **Slumbra**: good value, with a generous free plan.\n6. **Maryx**: popular for its clean interface and solid integrations.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 1
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 2
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 3
+    },
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 4
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 5
+    },
+    {
+     "name": "Maryx",
+     "domain": "maryx.com",
+     "position": 6
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 7
+    }
+   ],
+   "citations": [
+    "https://noctily.app/blog/best-app-to-improve-sleep",
+    "https://dozely.com/pricing",
+    "https://slumbra.com/blog/best-app-to-improve-sleep"
+   ]
+  },
+  {
+   "id": "r_2d824577118263",
+   "brandId": "driftwell",
+   "model": "chatgpt",
+   "prompt": "sleep tracker app without a wearable",
+   "fetchedAt": "2026-11-09T14:18:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"sleep tracker app without a wearable\":\n1. **Restwave**: easy to set up and well liked by small teams.\n2. **Slumbra**: popular for its clean interface and solid integrations.\n\nSources: [1](https://slumbra.com/pricing?utm_source=chatgpt.com) See also [slumbra.com/pricing](https://slumbra.com/pricing?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Restwave",
+     "domain": "restwave.com",
+     "position": 1
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_2d824577118263",
+   "brandId": "driftwell",
+   "model": "chatgpt",
+   "prompt": "sleep tracker app without a wearable",
+   "fetchedAt": "2026-11-09T14:18:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"sleep tracker app without a wearable\":\n1. **Restwave**: easy to set up and well liked by small teams.\n2. **Slumbra**: popular for its clean interface and solid integrations.\n\nSources: [1](https://slumbra.com/pricing?utm_source=chatgpt.com) See also [slumbra.com/pricing](https://slumbra.com/pricing?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Restwave",
+     "domain": "restwave.com",
+     "position": 1
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_c64fbdd05c98bb",
+   "brandId": "driftwell",
+   "model": "perplexity",
+   "prompt": "sleep tracker app without a wearable",
+   "fetchedAt": "2026-11-09T10:14:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"sleep tracker app without a wearable\":\n1. **Hushtide**: a reliable all-rounder with responsive support.\n2. **Noctily**: popular for its clean interface and solid integrations.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 1
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 2
+    }
+   ],
+   "citations": [
+    "https://noctily.app/blog/sleep-tracker-app-without-a-wearable"
+   ]
+  },
+  {
+   "id": "r_59a57a927c5a7e",
+   "brandId": "driftwell",
+   "model": "gemini",
+   "prompt": "sleep tracker app without a wearable",
+   "fetchedAt": "2026-11-09T06:00:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"sleep tracker app without a wearable\":\n1. **Slumbra**: good value, with a generous free plan.\n2. **Hushtide**: popular for its clean interface and solid integrations.\n3. **Restwave**: a reliable all-rounder with responsive support.\n4. **Noctily**: good value, with a generous free plan.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 1
+    },
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 2
+    },
+    {
+     "name": "Restwave",
+     "domain": "restwave.com",
+     "position": 3
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://slumbra.com/pricing",
+    "https://hushtide.com/",
+    "https://restwave.com/blog/sleep-tracker-app-without-a-wearable"
+   ]
+  },
+  {
+   "id": "r_baf0d64eef503c",
+   "brandId": "driftwell",
+   "model": "google_aio",
+   "prompt": "sleep tracker app without a wearable",
+   "fetchedAt": "2026-11-09T09:36:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"sleep tracker app without a wearable\":\n1. **Driftwell** (driftwell.app): easy to set up and well liked by small teams.\n2. **Restwave**: good value, with a generous free plan.\n3. **Noctily**: strong on reporting, with a slightly steeper learning curve.\n4. **Slumbra**: easy to set up and well liked by small teams.\n5. **Hushtide**: flexible, though advanced features cost extra.\nSeveral of these are also sold on Amazon, often with discounts.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 1
+    },
+    {
+     "name": "Restwave",
+     "domain": null,
+     "position": 2
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 3
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 4
+    },
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 5
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "/url?q=https%3A%2F%2Frestwave.com%2Fpricing&sa=U&ved=2ahUKEwik1IgSvtjfWumwG",
+    "/goto?url=https%3A%2F%2Fnoctily.app%2F&ref=aio",
+    "/url?q=https%3A%2F%2Fslumbra.com%2F&sa=U&ved=2ahUKEwioDqZ4dxN2ld9SZ",
+    "/search?q=sleep%20tracker%20app%20without%20a%20wearable&sca_esv=2ahUKEwi8n7keEUnK4ULph"
+   ]
+  },
+  {
+   "id": "r_d06c927f3b6108",
+   "brandId": "driftwell",
+   "model": "google_ai_mode",
+   "prompt": "sleep tracker app without a wearable",
+   "fetchedAt": "2026-11-09T14:06:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"sleep tracker app without a wearable\":\n1. **Slumbra**: flexible, though advanced features cost extra.\n2. **Hushtide**: a reliable all-rounder with responsive support.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 1
+    },
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 2
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://slumbra.com/"
+   ]
+  },
+  {
+   "id": "r_9e06bf9d9335b5",
+   "brandId": "driftwell",
+   "model": "chatgpt",
+   "prompt": "bedtime routine app for anxiety",
+   "fetchedAt": "2026-11-09T07:51:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"bedtime routine app for anxiety\":\n1. **Driftwell** (driftwell.app): good value, with a generous free plan.\n2. **Hushtide**: easy to set up and well liked by small teams.\n3. **Dozely**: flexible, though advanced features cost extra.\n4. **Noctily**: strong on reporting, with a slightly steeper learning curve.\n5. **Restwave**: easy to set up and well liked by small teams.\n\nSources: [1](https://hushtide.com/?utm_source=chatgpt.com) See also [hushtide.com/](https://hushtide.com/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 1
+    },
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 2
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 3
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 4
+    },
+    {
+     "name": "Restwave",
+     "domain": "restwave.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_221960ee015943",
+   "brandId": "driftwell",
+   "model": "perplexity",
+   "prompt": "bedtime routine app for anxiety",
+   "fetchedAt": "2026-11-09T11:52:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"bedtime routine app for anxiety\":\n1. **Slumbra**: easy to set up and well liked by small teams.\n2. **Dozely**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 1
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 2
+    }
+   ],
+   "citations": [
+    "https://slumbra.com/blog/bedtime-routine-app-for-anxiety",
+    "https://dozely.com/blog/bedtime-routine-app-for-anxiety"
+   ]
+  },
+  {
+   "id": "r_fb598d9d2e8d20",
+   "brandId": "driftwell",
+   "model": "gemini",
+   "prompt": "bedtime routine app for anxiety",
+   "fetchedAt": "2026-11-09T15:27:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"bedtime routine app for anxiety\":\n1. **Slumbra**: good value, with a generous free plan.\n2. **Noctily**: popular for its clean interface and solid integrations.\n3. **Dozely**: good value, with a generous free plan.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 1
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 2
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 3
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/4w1ztHGTr_c7H0igWGPoVci5NVGwTIvUIAoG4wHJ"
+   ]
+  },
+  {
+   "id": "r_111e0de77edcb0",
+   "brandId": "driftwell",
+   "model": "google_aio",
+   "prompt": "bedtime routine app for anxiety",
+   "fetchedAt": "2026-11-09T08:33:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"bedtime routine app for anxiety\":\n1. **Hushtide**: flexible, though advanced features cost extra.\n2. **Driftwell** (driftwell.app): a reliable all-rounder with responsive support.\n3. **Dozely**: easy to set up and well liked by small teams.\n4. **Slumbra**: easy to set up and well liked by small teams.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 1
+    },
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 2
+    },
+    {
+     "name": "Dozely",
+     "domain": "dozely.com",
+     "position": 3
+    },
+    {
+     "name": "Slumbra",
+     "domain": "slumbra.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://www.google.com/url?q=https%3A%2F%2Fhushtide.com%2F&sa=U&ved=2ahUKEwi2KaoSIP7S1r9XN&usg=AOvVaw"
+   ]
+  },
+  {
+   "id": "r_945325ec2ecfbd",
+   "brandId": "driftwell",
+   "model": "google_ai_mode",
+   "prompt": "bedtime routine app for anxiety",
+   "fetchedAt": "2026-11-09T10:40:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"bedtime routine app for anxiety\":\n1. **Hushtide**: popular for its clean interface and solid integrations.\n2. **Driftwell** (driftwell.app): easy to set up and well liked by small teams.\n3. **Noctily**: flexible, though advanced features cost extra.\n4. **Brinora**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Hushtide",
+     "domain": "hushtide.com",
+     "position": 1
+    },
+    {
+     "name": "Driftwell",
+     "domain": "driftwell.app",
+     "position": 2
+    },
+    {
+     "name": "Noctily",
+     "domain": "noctily.app",
+     "position": 3
+    },
+    {
+     "name": "Brinora",
+     "domain": "brinora.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://noctily.app/pricing"
+   ]
+  },
+  {
+   "id": "r_149b10ab2686f2",
+   "brandId": "nookbox",
+   "model": "chatgpt",
+   "prompt": "best storage boxes for a small flat",
+   "fetchedAt": "2026-11-09T11:07:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best storage boxes for a small flat\":\n1. **Nook-Box** (nook-box.com): easy to set up and well liked by small teams.\n2. **Binsmith**: strong on reporting, with a slightly steeper learning curve.\n3. **Cubbyhaus**: good value, with a generous free plan.\n4. **Tuckaway**: popular for its clean interface and solid integrations.\n5. **Orlard**: strong on reporting, with a slightly steeper learning curve.\n\nSources: [1](https://nook-box.com/?utm_source=chatgpt.com) [2](https://binsmith.co/blog/best-storage-boxes-for-a-small-flat?utm_source=chatgpt.com) [3](https://cubbyhaus.com/pricing?utm_source=chatgpt.com) [4](https://tuckaway.co/blog/best-storage-boxes-for-a-small-flat?utm_source=chatgpt.com) See also [nook-box.com/](https://nook-box.com/?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Nook-Box",
+     "domain": "nook-box.com",
+     "position": 1
+    },
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 2
+    },
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 3
+    },
+    {
+     "name": "Tuckaway",
+     "domain": "tuckaway.co",
+     "position": 4
+    },
+    {
+     "name": "Orlard",
+     "domain": "orlard.com",
+     "position": 5
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_8d61c9be53387b",
+   "brandId": "nookbox",
+   "model": "perplexity",
+   "prompt": "best storage boxes for a small flat",
+   "fetchedAt": "2026-11-09T07:41:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best storage boxes for a small flat\":\n1. **Cubbyhaus**: easy to set up and well liked by small teams.\n2. **Tuckaway**: good value, with a generous free plan.\n3. **Shelvia**: flexible, though advanced features cost extra.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 1
+    },
+    {
+     "name": "Tuckaway",
+     "domain": "tuckaway.co",
+     "position": 2
+    },
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 3
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://tuckaway.co/blog/best-storage-boxes-for-a-small-flat"
+   ]
+  },
+  {
+   "id": "r_d6e30d328fb35d",
+   "brandId": "nookbox",
+   "model": "gemini",
+   "prompt": "best storage boxes for a small flat",
+   "fetchedAt": "2026-11-09T17:13:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best storage boxes for a small flat\":\n1. **Cubbyhaus**: strong on reporting, with a slightly steeper learning curve.\n2. **Binsmith**: easy to set up and well liked by small teams.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 1
+    },
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 2
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/n9pBOsTHDeY9a3R_dxlDilgx2ELZW3W0O7n25VsV"
+   ]
+  },
+  {
+   "id": "r_4c93d47b11c496",
+   "brandId": "nookbox",
+   "model": "google_aio",
+   "prompt": "best storage boxes for a small flat",
+   "fetchedAt": "2026-11-09T09:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best storage boxes for a small flat\":\n1. **Cubbyhaus**: strong on reporting, with a slightly steeper learning curve.\n2. **Shelvia**: good value, with a generous free plan.\n3. **Ruskster**: a reliable all-rounder with responsive support.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 1
+    },
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 2
+    },
+    {
+     "name": "Ruskster",
+     "domain": "ruskster.com",
+     "position": 3
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fshelvia.com%2Fpricing&ref=aio",
+    "https://www.google.com/url?q=https%3A%2F%2Fruskster.com%2Fblog%2Fbest-storage-boxes-for-a-small-flat&sa=U&ved=2ahUKEwiGkE3Krm-47B1CG&usg=AOvVaw"
+   ]
+  },
+  {
+   "id": "r_bf92d6340a5053",
+   "brandId": "nookbox",
+   "model": "google_ai_mode",
+   "prompt": "best storage boxes for a small flat",
+   "fetchedAt": "2026-11-09T11:30:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best storage boxes for a small flat\":\n1. **Nook-Box** (nook-box.com): strong on reporting, with a slightly steeper learning curve.\n2. **Cubbyhaus**: strong on reporting, with a slightly steeper learning curve.\n3. **Shelvia**: popular for its clean interface and solid integrations.\n4. **Stowly**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Nook-Box",
+     "domain": "nook-box.com",
+     "position": 1
+    },
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 2
+    },
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 3
+    },
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://cubbyhaus.com/pricing",
+    "https://shelvia.com/blog/best-storage-boxes-for-a-small-flat"
+   ]
+  },
+  {
+   "id": "r_cabda4a47c330f",
+   "brandId": "nookbox",
+   "model": "chatgpt",
+   "prompt": "stackable storage for wardrobes",
+   "fetchedAt": "2026-11-09T13:15:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"stackable storage for wardrobes\":\n1. **Cubbyhaus**: flexible, though advanced features cost extra.\n2. **Stowly**: flexible, though advanced features cost extra.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 1
+    },
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_2e3866c97b4ec7",
+   "brandId": "nookbox",
+   "model": "perplexity",
+   "prompt": "stackable storage for wardrobes",
+   "fetchedAt": "2026-11-09T11:21:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"stackable storage for wardrobes\":\n1. **Binsmith**: easy to set up and well liked by small teams.\n2. **Stowly**: easy to set up and well liked by small teams.\nReddit threads are a good place to read honest user experiences.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 1
+    },
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 2
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 3
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://www.reddit.com/r/home-storage/comments/83632"
+   ]
+  },
+  {
+   "id": "r_2e3866c97b4ec7",
+   "brandId": "nookbox",
+   "model": "perplexity",
+   "prompt": "stackable storage for wardrobes",
+   "fetchedAt": "2026-11-09T11:21:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"stackable storage for wardrobes\":\n1. **Binsmith**: easy to set up and well liked by small teams.\n2. **Stowly**: easy to set up and well liked by small teams.\nReddit threads are a good place to read honest user experiences.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 1
+    },
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 2
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 3
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://www.reddit.com/r/home-storage/comments/83632"
+   ]
+  },
+  {
+   "id": "r_f4020b27411ee4",
+   "brandId": "nookbox",
+   "model": "gemini",
+   "prompt": "stackable storage for wardrobes",
+   "fetchedAt": "2026-11-09T17:00:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"stackable storage for wardrobes\":\n1. **Stowly**: popular for its clean interface and solid integrations.\n2. **Tuckaway**: flexible, though advanced features cost extra.\n3. **Shelvia**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 1
+    },
+    {
+     "name": "Tuckaway",
+     "domain": "tuckaway.co",
+     "position": 2
+    },
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/Uu_pWPDPDOjq_ZQTRul9Z-GaqU-9A3b20bSqAZyM"
+   ]
+  },
+  {
+   "id": "r_87c24dfff8f92c",
+   "brandId": "nookbox",
+   "model": "google_aio",
+   "prompt": "stackable storage for wardrobes",
+   "fetchedAt": "2026-11-09T14:49:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"stackable storage for wardrobes\":\n1. **Binsmith**: good value, with a generous free plan.\n2. **Nook-Box** (nook-box.com): flexible, though advanced features cost extra.\n3. **Tuckaway**: popular for its clean interface and solid integrations.\n4. **Shelvia**: flexible, though advanced features cost extra.\n5. **Cubbyhaus**: good value, with a generous free plan.\n6. **Holwick**: good value, with a generous free plan.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 1
+    },
+    {
+     "name": "Nook-Box",
+     "domain": "nook-box.com",
+     "position": 2
+    },
+    {
+     "name": "Tuckaway",
+     "domain": "tuckaway.co",
+     "position": 3
+    },
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 4
+    },
+    {
+     "name": "Cubbyhaus",
+     "domain": null,
+     "position": 5
+    },
+    {
+     "name": "Holwick",
+     "domain": "holwick.com",
+     "position": 6
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fbinsmith.co%2Fblog%2Fstackable-storage-for-wardrobes&ref=aio",
+    "https://www.google.com/url?q=https%3A%2F%2Fnook-box.com%2F&sa=U&ved=2ahUKEwivgrO3UTxlMB7Rj&usg=AOvVaw",
+    "/url?q=https%3A%2F%2Fshelvia.com%2F&sa=U&ved=2ahUKEwiCK9GMsO0ttu_a8"
+   ]
+  },
+  {
+   "id": "r_c20a0c02c758dc",
+   "brandId": "nookbox",
+   "model": "google_ai_mode",
+   "prompt": "stackable storage for wardrobes",
+   "fetchedAt": "2026-11-09T14:09:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"stackable storage for wardrobes\":\n1. **Cubbyhaus**: flexible, though advanced features cost extra.\n2. **Stowly**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 1
+    },
+    {
+     "name": "Stowly",
+     "domain": null,
+     "position": 2
+    }
+   ],
+   "citations": [
+    "https://cubbyhaus.com/pricing"
+   ]
+  },
+  {
+   "id": "r_47d77955d2e034",
+   "brandId": "nookbox",
+   "model": "chatgpt",
+   "prompt": "under bed storage that looks nice",
+   "fetchedAt": "2026-11-09T13:58:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"under bed storage that looks nice\":\n1. **Stowly**: popular for its clean interface and solid integrations.\n2. **Binsmith**: easy to set up and well liked by small teams.\n3. **Cubbyhaus**: popular for its clean interface and solid integrations.\n4. **Tuckaway**: easy to set up and well liked by small teams.\n\nSources: [1](https://stowly.com/blog/under-bed-storage-that-looks-nice?utm_source=chatgpt.com) [2](https://binsmith.co/blog/under-bed-storage-that-looks-nice?utm_source=chatgpt.com) [3](https://tuckaway.co/blog/under-bed-storage-that-looks-nice?utm_source=chatgpt.com) See also [stowly.com/blog/under-bed-storage-that-looks-nice](https://stowly.com/blog/under-bed-storage-that-looks-nice?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 1
+    },
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 2
+    },
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 3
+    },
+    {
+     "name": "Tuckaway",
+     "domain": "tuckaway.co",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_eca1b66e500dc1",
+   "brandId": "nookbox",
+   "model": "perplexity",
+   "prompt": "under bed storage that looks nice",
+   "fetchedAt": "2026-11-09T17:26:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"under bed storage that looks nice\":\n1. **Nook-Box** (nook-box.com): popular for its clean interface and solid integrations.\n2. **Cubbyhaus**: good value, with a generous free plan.\n3. **Binsmith**: a reliable all-rounder with responsive support.\n4. **Shelvia**: a reliable all-rounder with responsive support.\n5. **Stowly**: flexible, though advanced features cost extra.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Nook-Box",
+     "domain": "nook-box.com",
+     "position": 1
+    },
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 2
+    },
+    {
+     "name": "Binsmith",
+     "domain": "binsmith.co",
+     "position": 3
+    },
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 4
+    },
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 5
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://nook-box.com/pricing",
+    "https://cubbyhaus.com/pricing",
+    "https://binsmith.co/blog/under-bed-storage-that-looks-nice",
+    "https://stowly.com/"
+   ]
+  },
+  {
+   "id": "r_6801a1f7fafc6c",
+   "brandId": "nookbox",
+   "model": "gemini",
+   "prompt": "under bed storage that looks nice",
+   "fetchedAt": "2026-11-09T10:16:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"under bed storage that looks nice\":\n1. **Shelvia**: popular for its clean interface and solid integrations.\n2. **Nook-Box** (nook-box.com): strong on reporting, with a slightly steeper learning curve.\n3. **Cubbyhaus**: popular for its clean interface and solid integrations.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 1
+    },
+    {
+     "name": "Nook-Box",
+     "domain": "nook-box.com",
+     "position": 2
+    },
+    {
+     "name": "Cubbyhaus",
+     "domain": "cubbyhaus.com",
+     "position": 3
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/jKTKhFzWtbDB0WHaHoebWPV1X6xMBavoZXiTeBBI"
+   ]
+  },
+  {
+   "id": "r_0db735299dd43a",
+   "brandId": "nookbox",
+   "model": "google_aio",
+   "prompt": "under bed storage that looks nice",
+   "fetchedAt": "2026-11-09T17:28:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"under bed storage that looks nice\":\n1. **Tuckaway**: a reliable all-rounder with responsive support.\n2. **Stowly**: popular for its clean interface and solid integrations.\n3. **Korora**: easy to set up and well liked by small teams.\nSeveral of these are also sold on Amazon, often with discounts.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Tuckaway",
+     "domain": null,
+     "position": 1
+    },
+    {
+     "name": "Stowly",
+     "domain": "stowly.com",
+     "position": 2
+    },
+    {
+     "name": "Korora",
+     "domain": "korora.com",
+     "position": 3
+    },
+    {
+     "name": "Amazon",
+     "domain": "amazon.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "/url?q=https%3A%2F%2Fstowly.com%2Fpricing&sa=U&ved=2ahUKEwiDK_eJ7MbhgaKnR"
+   ]
+  },
+  {
+   "id": "r_b7774a817f9b91",
+   "brandId": "nookbox",
+   "model": "google_ai_mode",
+   "prompt": "under bed storage that looks nice",
+   "fetchedAt": "2026-11-09T10:24:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"under bed storage that looks nice\":\n1. **Shelvia**: popular for its clean interface and solid integrations.\n2. **Tuckaway**: good value, with a generous free plan.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Shelvia",
+     "domain": "shelvia.com",
+     "position": 1
+    },
+    {
+     "name": "Tuckaway",
+     "domain": "tuckaway.co",
+     "position": 2
+    }
+   ],
+   "citations": [
+    "https://shelvia.com/pricing",
+    "https://tuckaway.co/pricing"
+   ]
+  },
+  {
+   "id": "r_46a56447ae6ed8",
+   "brandId": "peakmint",
+   "model": "chatgpt",
+   "prompt": "best workout app for beginners",
+   "fetchedAt": "2026-11-09T07:40:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best workout app for beginners\":\n1. **Repwise**: a reliable all-rounder with responsive support.\n2. **Gainly**: good value, with a generous free plan.\n\nSources: [1](https://repwise.app/?utm_source=chatgpt.com) [2](https://gainly.fit/blog/best-workout-app-for-beginners?utm_source=chatgpt.com) See also [repwise.app/](https://repwise.app/?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 2
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_4635b4ca8841c8",
+   "brandId": "peakmint",
+   "model": "perplexity",
+   "prompt": "best workout app for beginners",
+   "fetchedAt": "2026-11-09T07:35:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best workout app for beginners\":\n1. **Repwise**: flexible, though advanced features cost extra.\n2. **Peakmint** (peakmint.fit): good value, with a generous free plan.\n3. **Ironleaf**: popular for its clean interface and solid integrations.\n4. **Musclemap**: easy to set up and well liked by small teams.\n5. **Galion**: strong on reporting, with a slightly steeper learning curve.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 2
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 3
+    },
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 4
+    },
+    {
+     "name": "Galion",
+     "domain": "galion.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://repwise.app/blog/best-workout-app-for-beginners",
+    "https://musclemap.app/blog/best-workout-app-for-beginners",
+    "https://galion.com/pricing"
+   ]
+  },
+  {
+   "id": "r_9ec72a3fec0298",
+   "brandId": "peakmint",
+   "model": "gemini",
+   "prompt": "best workout app for beginners",
+   "fetchedAt": "2026-11-09T12:44:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best workout app for beginners\":\n1. **Liftora**: strong on reporting, with a slightly steeper learning curve.\n2. **Musclemap**: strong on reporting, with a slightly steeper learning curve.\n3. **Ironleaf**: strong on reporting, with a slightly steeper learning curve.\n4. **Repwise**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 1
+    },
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 2
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 3
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 4
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://liftora.com/pricing",
+    "https://musclemap.app/blog/best-workout-app-for-beginners",
+    "https://repwise.app/"
+   ]
+  },
+  {
+   "id": "r_72c3bbc0fbef90",
+   "brandId": "peakmint",
+   "model": "google_aio",
+   "prompt": "best workout app for beginners",
+   "fetchedAt": "2026-11-09T14:48:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best workout app for beginners\":\n1. **Musclemap**: popular for its clean interface and solid integrations.\n2. **Repwise**: flexible, though advanced features cost extra.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 1
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 2
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://musclemap.app/",
+    "https://repwise.app/"
+   ]
+  },
+  {
+   "id": "r_374235038b66e0",
+   "brandId": "peakmint",
+   "model": "google_ai_mode",
+   "prompt": "best workout app for beginners",
+   "fetchedAt": "2026-11-09T09:19:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"best workout app for beginners\":\n1. **Musclemap**: strong on reporting, with a slightly steeper learning curve.\n2. **Gainly**: strong on reporting, with a slightly steeper learning curve.\n3. **Holard**: a reliable all-rounder with responsive support.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 1
+    },
+    {
+     "name": "Gainly",
+     "domain": null,
+     "position": 2
+    },
+    {
+     "name": "Holard",
+     "domain": "holard.com",
+     "position": 3
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 4
+    }
+   ],
+   "citations": [
+    "https://holard.com/"
+   ]
+  },
+  {
+   "id": "r_6a405f72539d92",
+   "brandId": "peakmint",
+   "model": "chatgpt",
+   "prompt": "strength training app with progress tracking",
+   "fetchedAt": "2026-11-09T11:35:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"strength training app with progress tracking\":\n1. **Musclemap**: easy to set up and well liked by small teams.\n2. **Gainly**: flexible, though advanced features cost extra.\n3. **Ironleaf**: popular for its clean interface and solid integrations.\n4. **Repwise**: a reliable all-rounder with responsive support.\n\nSources: [1](https://musclemap.app/pricing?utm_source=chatgpt.com) [2](https://ironleaf.com/?utm_source=chatgpt.com) [3](https://repwise.app/?utm_source=chatgpt.com) See also [musclemap.app/pricing](https://musclemap.app/pricing?utm_source=chatgpt.com).",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 1
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 2
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 3
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_8f91508eaaea47",
+   "brandId": "peakmint",
+   "model": "perplexity",
+   "prompt": "strength training app with progress tracking",
+   "fetchedAt": "2026-11-09T14:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"strength training app with progress tracking\":\n1. **Peakmint** (peakmint.fit): a reliable all-rounder with responsive support.\n2. **Gainly**: easy to set up and well liked by small teams.\n3. **Liftora**: strong on reporting, with a slightly steeper learning curve.\n4. **Repwise**: a reliable all-rounder with responsive support.\nReddit threads are a good place to read honest user experiences.\nAnswer compiled by Perplexity from the sources below.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 1
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 2
+    },
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 3
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    },
+    {
+     "name": "Perplexity",
+     "domain": null,
+     "position": 6
+    }
+   ],
+   "citations": [
+    "https://liftora.com/pricing",
+    "https://repwise.app/pricing",
+    "https://www.reddit.com/r/fitness-app/comments/137713"
+   ]
+  },
+  {
+   "id": "r_f51268ca4aff1c",
+   "brandId": "peakmint",
+   "model": "gemini",
+   "prompt": "strength training app with progress tracking",
+   "fetchedAt": "2026-11-09T13:49:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"strength training app with progress tracking\":\n1. **Repwise**: good value, with a generous free plan.\n2. **Musclemap**: easy to set up and well liked by small teams.\n3. **Liftora**: flexible, though advanced features cost extra.\n4. **Peakmint** (peakmint.fit): flexible, though advanced features cost extra.\n5. **Gainly**: easy to set up and well liked by small teams.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 2
+    },
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 3
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 4
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://repwise.app/pricing",
+    "https://musclemap.app/pricing"
+   ]
+  },
+  {
+   "id": "r_7c547bd9029b59",
+   "brandId": "peakmint",
+   "model": "google_aio",
+   "prompt": "strength training app with progress tracking",
+   "fetchedAt": "2026-11-09T11:09:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"strength training app with progress tracking\":\n1. **Liftora**: strong on reporting, with a slightly steeper learning curve.\n2. **Ironleaf**: strong on reporting, with a slightly steeper learning curve.\n3. **Peakmint** (peakmint.fit): popular for its clean interface and solid integrations.\n4. **Repwise**: strong on reporting, with a slightly steeper learning curve.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 1
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 2
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 3
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://www.google.com/url?q=https%3A%2F%2Frepwise.app%2Fblog%2Fstrength-training-app-with-progress-tracking&sa=U&ved=2ahUKEwiqb5P24bCBwM_1V&usg=AOvVaw"
+   ]
+  },
+  {
+   "id": "r_fca0c9119d37dd",
+   "brandId": "peakmint",
+   "model": "google_ai_mode",
+   "prompt": "strength training app with progress tracking",
+   "fetchedAt": "2026-11-09T11:52:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"strength training app with progress tracking\":\n1. **Repwise**: strong on reporting, with a slightly steeper learning curve.\n2. **Gainly**: a reliable all-rounder with responsive support.\n3. **Peakmint** (peakmint.fit): popular for its clean interface and solid integrations.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 2
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://gainly.fit/blog/strength-training-app-with-progress-tracking"
+   ]
+  },
+  {
+   "id": "r_fca0c9119d37dd",
+   "brandId": "peakmint",
+   "model": "google_ai_mode",
+   "prompt": "strength training app with progress tracking",
+   "fetchedAt": "2026-11-09T11:52:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"strength training app with progress tracking\":\n1. **Repwise**: strong on reporting, with a slightly steeper learning curve.\n2. **Gainly**: a reliable all-rounder with responsive support.\n3. **Peakmint** (peakmint.fit): popular for its clean interface and solid integrations.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 2
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://gainly.fit/blog/strength-training-app-with-progress-tracking"
+   ]
+  },
+  {
+   "id": "r_b720b08a32e4b7",
+   "brandId": "peakmint",
+   "model": "chatgpt",
+   "prompt": "home workout plan app",
+   "fetchedAt": "2026-11-09T09:28:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"home workout plan app\":\n1. **Repwise**: popular for its clean interface and solid integrations.\n2. **Peakmint** (peakmint.fit): a reliable all-rounder with responsive support.\n3. **Ironleaf**: a reliable all-rounder with responsive support.\nReddit threads are a good place to read honest user experiences.\n\nSources: [1](https://peakmint.fit/pricing?utm_source=chatgpt.com) [2](https://ironleaf.com/blog/home-workout-plan-app?utm_source=chatgpt.com) See also [peakmint.fit/pricing](https://peakmint.fit/pricing?utm_source=chatgpt.com).",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 2
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 3
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 4
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "r_c535e4ffa446af",
+   "brandId": "peakmint",
+   "model": "perplexity",
+   "prompt": "home workout plan app",
+   "fetchedAt": "2026-11-09T13:55:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"home workout plan app\":\n1. **Repwise**: good value, with a generous free plan.\n2. **Musclemap**: popular for its clean interface and solid integrations.\n3. **Liftora**: popular for its clean interface and solid integrations.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 1
+    },
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 2
+    },
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://repwise.app/pricing",
+    "https://liftora.com/"
+   ]
+  },
+  {
+   "id": "r_ddfc54ac595bd9",
+   "brandId": "peakmint",
+   "model": "gemini",
+   "prompt": "home workout plan app",
+   "fetchedAt": "2026-11-09T13:22:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"home workout plan app\":\n1. **Liftora**: good value, with a generous free plan.\n2. **Repwise**: popular for its clean interface and solid integrations.\nYou can also search Google for recent reviews before deciding.",
+   "isMentioned": false,
+   "mentions": [
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 1
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 2
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "position": 3
+    }
+   ],
+   "citations": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/iFvio0w9pSCB4tWNqaZlphUuc0WSgXHhtWZiIof6"
+   ]
+  },
+  {
+   "id": "r_a3fd10b7ae7ea8",
+   "brandId": "peakmint",
+   "model": "google_aio",
+   "prompt": "home workout plan app",
+   "fetchedAt": "2026-11-09T07:10:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"home workout plan app\":\n1. **Peakmint** (peakmint.fit): flexible, though advanced features cost extra.\n2. **Musclemap**: strong on reporting, with a slightly steeper learning curve.\n3. **Ironleaf**: a reliable all-rounder with responsive support.\n4. **Gainly**: popular for its clean interface and solid integrations.\nReddit threads are a good place to read honest user experiences.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 1
+    },
+    {
+     "name": "Musclemap",
+     "domain": "musclemap.app",
+     "position": 2
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 3
+    },
+    {
+     "name": "Gainly",
+     "domain": "gainly.fit",
+     "position": 4
+    },
+    {
+     "name": "Reddit",
+     "domain": "reddit.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "/goto?url=https%3A%2F%2Fpeakmint.fit%2Ffeatures&ref=aio",
+    "/url?q=https%3A%2F%2Fmusclemap.app%2F&sa=U&ved=2ahUKEwiurXe-1m7X9_dxK",
+    "/goto?url=https%3A%2F%2Fironleaf.com%2F&ref=aio",
+    "/url?q=https%3A%2F%2Fwww.reddit.com%2Fr%2Ffitness-app%2Fcomments%2F314637&sa=U&ved=2ahUKEwigGEhPDpXJR69gE",
+    "/search?q=home%20workout%20plan%20app&sca_esv=2ahUKEwiN3pZcEviJnmzWZ"
+   ]
+  },
+  {
+   "id": "r_2e11d943da9d62",
+   "brandId": "peakmint",
+   "model": "google_ai_mode",
+   "prompt": "home workout plan app",
+   "fetchedAt": "2026-11-09T08:51:00Z",
+   "httpStatus": 200,
+   "text": "Here are some good options for \"home workout plan app\":\n1. **Liftora**: a reliable all-rounder with responsive support.\n2. **Repwise**: good value, with a generous free plan.\n3. **Peakmint** (peakmint.fit): flexible, though advanced features cost extra.\n4. **Ironleaf**: strong on reporting, with a slightly steeper learning curve.\nYouTube has plenty of walkthrough videos for each option.",
+   "isMentioned": true,
+   "mentions": [
+    {
+     "name": "Liftora",
+     "domain": "liftora.com",
+     "position": 1
+    },
+    {
+     "name": "Repwise",
+     "domain": "repwise.app",
+     "position": 2
+    },
+    {
+     "name": "Peakmint",
+     "domain": "peakmint.fit",
+     "position": 3
+    },
+    {
+     "name": "Ironleaf",
+     "domain": "ironleaf.com",
+     "position": 4
+    },
+    {
+     "name": "YouTube",
+     "domain": "youtube.com",
+     "position": 5
+    }
+   ],
+   "citations": [
+    "https://liftora.com/pricing",
+    "https://peakmint.fit/pricing"
+   ]
+  }
+ ]
+}

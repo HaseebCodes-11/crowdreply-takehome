@@ -1,0 +1,59 @@
+{
+ "compass": {
+  "Dealvine": true,
+  "Pipewell": true,
+  "Closera": true,
+  "Leadquill": true,
+  "Salesmoor": true
+ },
+ "barkandbloom": {
+  "Pawlish": true,
+  "Mudpaw": true,
+  "Coatly": true,
+  "Snoutwell": true,
+  "Furrowfinch": true
+ },
+ "fieldnote": {
+  "Quillbase": true,
+  "Inkpond": true,
+  "Scribewell": true,
+  "Margina": true,
+  "Lumenote": true
+ },
+ "tasklane": {
+  "Plandrift": true,
+  "Kanbrik": true,
+  "Trellova": true,
+  "Sprintmoss": true,
+  "Boardhaven": true,
+  "Taskwyn": true
+ },
+ "lumora": {
+  "Staffora": true,
+  "Peoplewick": true,
+  "Hirebloom": true,
+  "Teamstead": true,
+  "Onbordo": true
+ },
+ "driftwell": {
+  "Slumbra": true,
+  "Noctily": true,
+  "Restwave": true,
+  "Dozely": true,
+  "Hushtide": true
+ },
+ "nookbox": {
+  "Stowly": true,
+  "Cubbyhaus": true,
+  "Shelvia": true,
+  "Binsmith": true,
+  "Tuckaway": true
+ },
+ "peakmint": {
+  "Liftora": true,
+  "Repwise": true,
+  "Gainly": true,
+  "Musclemap": true,
+  "Ironleaf": true
+ }
+}

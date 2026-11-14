@@ -1,0 +1,740 @@
+{
+ "google.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "reddit.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "amazon.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "youtube.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "g2.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "capterra.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "slack.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "zoom.us": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "wikipedia.org": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "linkedin.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "iverumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "jaskard.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "orlumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "quorumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "jaskster.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "holion.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "galova.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "lunixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "cally.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "galwick.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "jaskixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "jaskumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "galion.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "nimett.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "eskard.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "dovora.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "maryx.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "eskixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "marwick.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "orlixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "orlett.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "fenora.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "quorion.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "holumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "dovumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "marixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "korora.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "holard.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "ruskster.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "holwick.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "velova.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "galett.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "eskumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "fenion.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "brinixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "korard.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "brinwick.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "fenyx.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "orlard.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "galyx.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "velion.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "eskwick.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "brinora.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "marumo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "iverixa.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "plandrift.com": {
+  "status": "nxdomain"
+ },
+ "sprintmoss.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.atom.com",
+   "ns2.atom.com"
+  ],
+  "redirect": "https://www.atom.com/name/Sprintmoss"
+ },
+ "pipewellhq.com": {
+  "status": "nxdomain"
+ },
+ "inkpond.com": {
+  "status": "servfail"
+ },
+ "compasscrm.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "dealvine.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "pipewell.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "closera.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "leadquill.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "salesmoor.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "barkandbloom.co": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "pawlish.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "mudpaw.co": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "coatly.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "snoutwell.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "furrowfinch.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "getfieldnote.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "quillbase.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "scribewell.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "margina.app": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "lumenote.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "tasklane.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "plandrift.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "kanbrik.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "trellova.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "sprintmoss.app": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "boardhaven.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "taskwyn.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "lumora.hr": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "staffora.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "peoplewick.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "hirebloom.io": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "teamstead.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "onbordo.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "driftwell.app": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "slumbra.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "noctily.app": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "restwave.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "dozely.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "hushtide.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "nook-box.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "stowly.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "cubbyhaus.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "shelvia.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "binsmith.co": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "tuckaway.co": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "peakmint.fit": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "liftora.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "repwise.app": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "gainly.fit": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "musclemap.app": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ },
+ "ironleaf.com": {
+  "status": "live",
+  "nameservers": [
+   "ns1.dnshost.example",
+   "ns2.dnshost.example"
+  ]
+ }
+}
