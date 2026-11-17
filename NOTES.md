@@ -226,6 +226,38 @@ The upper limit of 365 is my choice, not something the brief asks for. If anothe
 
 **How I checked.** `test/api.test.ts` sends each bad value and expects 400 with the message, and checks that 1, 365 and the default still work.
 
+## The feature: share of voice
+
+`GET /brands/:id/share-of-voice?days=90`, implemented in `src/shareOfVoice.ts`.
+
+```json
+{
+  "brandId": "tasklane",
+  "days": 90,
+  "from": "2026-08-17",
+  "to": "2026-11-14",
+  "competitors": ["Taskwyn", "Sprintmoss", "Boardhaven", "Trellova", "Plandrift", "Kanbrik"],
+  "byModel": {
+    "chatgpt": { "Tasklane": 0.1511, "Taskwyn": 0.1547, "Sprintmoss": 0.1475, "Boardhaven": 0.1439, "Trellova": 0.1331, "Plandrift": 0.1259, "Kanbrik": 0.1439 }
+  },
+  "counts": { "chatgpt": { "Tasklane": 42, "Taskwyn": 43, "…": 0 } }
+}
+```
+
+(Shares are shortened here. The API returns full precision.)
+
+How each rule in the brief is met:
+
+- **Real competitors.** The list comes from the same function that serves `/brands/:id/competitors`, so the two can never disagree. A test asserts they are equal.
+- **Count answers, not mentions.** Each answer contributes at most one count per name. A test stores an answer that lists Kanbrik twice and checks that Kanbrik's count goes up by one.
+- **Same answers as visibility.** Both go through `countedAnswers()`: inside the window, not failed, no duplicates.
+- **Shares add up to 1, or are all 0.** Each share is the name's count divided by the sum of all counts for that model. A test checks the sum for all eight brands and five models, and checks the all-zero case on Fieldnote's ChatGPT answers during the outage, where nothing is countable.
+- **Who is "named".** The client's brand uses our own detector from problem 5. Competitors use the vendor's `mentions`. I checked that choice first: for the real competitors the vendor's list agrees with the answer text in all 9,954 cases in the feed, so re-detecting them from text would add code without changing a number.
+
+Two fields are added to the shape in the brief: `from` and `to` (as visibility has), and `counts`, the number of answers behind each share, so any share can be checked by hand. `days` defaults to 90 and is validated like the visibility route.
+
+**How I checked.** `test/share-of-voice.test.ts`. The expected ChatGPT shares for Tasklane in the test were produced by a separate script over the raw feed before the endpoint existed, and the endpoint matches them to three decimals.
+
 ## Problems found but not fixed
 
 _To be completed._

@@ -3,6 +3,7 @@ import { PORT } from './config.ts';
 import { describeStats, loadAll } from './ingest.ts';
 import { competitors } from './competitors.ts';
 import { visibility } from './metrics.ts';
+import { shareOfVoice } from './shareOfVoice.ts';
 import { getAnswer, getBrand, listBrands } from './store.ts';
 
 type Handler = (params: string[], query: URLSearchParams) => unknown | Promise<unknown>;
@@ -31,6 +32,10 @@ const routes: [RegExp, Handler][] = [
   [/^\/brands\/([\w-]+)\/competitors$/, async ([id]) => {
     if (!getBrand(id)) throw new NotFound();
     return { brandId: id, competitors: await competitors(id) };
+  }],
+  [/^\/brands\/([\w-]+)\/share-of-voice$/, async ([id], q) => {
+    if (!getBrand(id)) throw new NotFound();
+    return shareOfVoice(id, daysParam(q, 90));
   }],
   [/^\/responses\/([\w-]+)$/, ([id]) => {
     const a = getAnswer(id);
