@@ -12,6 +12,37 @@ curl -s localhost:4600/responses/r_02ed75293f5602
 curl -s "localhost:4600/brands/compass/visibility?days=30"
 ```
 
+## Summary
+
+Eight problems fixed, one feature added. One commit each, in this order.
+
+| # | Problem | Who noticed | Commit |
+|---|---|---|---|
+| 1 | Ingest dropped 18% of answers | nobody | Keep answers whose mentions have no domain |
+| 2 | Duplicate deliveries counted twice | nobody | Store each answer once when the vendor delivers it twice |
+| 3 | Date window had no end | nobody | Stop counting answers fetched after the end of the window |
+| 4 | Junk answers counted as misses | Fieldnote | Mark junk answers as failed instead of counting them as misses |
+| 5 | Own-brand detection wrong both ways | Compass, Bark & Bloom | Detect the client's brand from the text, not from the vendor flag |
+| 6 | Competitor list full of platforms | Tasklane | Build the competitor list from LLM verdicts and live domains |
+| 7 | Citations not usable links | Driftwell | Store citations as full links to the cited pages |
+| 8 | Bad `days` crashed the request | nobody | Reject a days value that is not a whole number from 1 to 365 |
+| | Share of voice | feature | Add share of voice: GET /brands/:id/share-of-voice?days=90 |
+
+Effect on 30-day visibility (2026-10-16 to 2026-11-14, all models), original code against the final code:
+
+| Brand | Before | After |
+|---|---|---|
+| Compass | 204 of 369 (55.3%) | 174 of 412 (42.2%) |
+| Bark & Bloom | 94 of 356 (26.4%) | 160 of 415 (38.6%) |
+| Fieldnote | 153 of 356 (43.0%) | 178 of 411 (43.3%) |
+| Tasklane | 153 of 370 (41.4%) | 178 of 409 (43.5%) |
+| Lumora | 144 of 364 (39.6%) | 171 of 412 (41.5%) |
+| Driftwell | 137 of 363 (37.7%) | 163 of 414 (39.4%) |
+| Nook-Box | 133 of 368 (36.1%) | 160 of 408 (39.2%) |
+| Peakmint | 146 of 363 (40.2%) | 163 of 410 (39.8%) |
+
+The tests went from 8 to 60. The original 8 are unchanged and pass. `npm run typecheck` is clean.
+
 ## Problems found and fixed
 
 ### 1. Ingest silently dropped 18% of all answers
@@ -258,14 +289,46 @@ Two fields are added to the shape in the brief: `from` and `to` (as visibility h
 
 **How I checked.** `test/share-of-voice.test.ts`. The expected ChatGPT shares for Tasklane in the test were produced by a separate script over the raw feed before the endpoint existed, and the endpoint matches them to three decimals.
 
+## README corrections
+
+The README described intended behaviour that the code did not have, and left out things about the vendor's data that matter. The final commit updates it:
+
+- It said `status` is `failed` "for an answer we shouldn't count". In the original code that could never happen for this feed, because every answer has `httpStatus: 200`. It is true now, and the reasons are documented.
+- It said citations are full `https://` links. Two of the five models did not send them. It is true now.
+- It said ingest "stores each answer". It dropped 18% and stored duplicates twice.
+- It did not say the feed files also carry `batch` and `vendor`, that answers are resent, that `isMentioned` is unreliable, or that `mentions` includes platforms and entries without a domain.
+- It now documents the new endpoint, the added fields, and the 400 response for a bad `days` value.
+
 ## Problems found but not fixed
 
-_To be completed._
+- **A generic word at the start of a sentence.** Detection requires a capital to tell Compass from a compass. A sentence that begins with the generic word ("Compass readings vary") would be counted as a mention. The feed has no such sentence. I left it because the stricter alternatives miss real mentions.
+- **Refusals worded differently.** Only the one refusal sentence in the feed is recognised. A new wording would be counted as a miss until it is added to `src/failure.ts`.
+- **A competitor that is rarely named.** Names in fewer than 20 counted answers are never sent to the LLM, to save credits. A real but rarely named competitor would be left out. Nothing in this feed is close to the line (real ones 190+, others 7 or fewer), and the constant is `MIN_ANSWERS_TO_CLASSIFY` in `src/competitors.ts`.
+- **Competitor detection relies on the vendor.** I replaced the vendor's judgement for the client's own brand but kept its `mentions` for competitors, because they agree with the text in every case here. If the vendor missed a competitor the way it missed "Bark and Bloom", share of voice would undercount it.
+- **The July batch.** `data/feed/2026-07-17.json` holds 40 answers, three months older than everything else. They look valid, so I kept them. They fall outside the 30 and 90 day windows. They do count towards `mentions` in `/competitors`, which has no window, adding 2 to 4 to each count. I could not tell from the data whether this file is a stray or a legitimate backfill, so I did not exclude it.
+- **Nothing is persisted.** LLM verdicts and resolved redirect links live in memory. Every restart spends the 82 credits again and repeats the 1,072 link checks (about a second). A real deployment should store both.
+- **Concurrent first requests for different brands.** LLM calls are sequential within one brand. Two brands requested at the same moment interleave, and a rate-limit rejection can then hit two calls at once and waste a credit.
+- **The 365-day cap on `days`** is my assumption. See problem 8.
 
 ## What my AI tools got wrong
 
-_To be completed._
+I used Claude Code throughout. These are the mistakes it made and how each was caught.
+
+1. **It misread a Bark & Bloom variant.** After a first probe it reported that 28 answers spell the brand "BarkandBloom". A second probe that printed the matched text showed those answers name only the domain `barkandbloom.co`, and the first probe's pattern had matched inside the domain. The fix was the same in spirit (match the domain), but the claim was wrong, and a detector built for "BarkandBloom" alone would have looked right in a unit test and missed all 28 real answers.
+2. **It treated "live" as "valid" for a domain.** It first listed `sprintmoss.com` and `sprintmoss.app` as two valid domains because DNS reports both as `live`. Printing the full records showed `sprintmoss.com` uses a marketplace's nameservers and redirects there. That is why the domain picker looks at the redirect and not only the status.
+3. **Its first guess for Fieldnote was wrong.** The initial rules file pointed at `httpStatus` handling and gaps in the feed. Profiling the feed showed every status is 200 and no day is missing. The failures are in the answer text.
+4. **It wrote a test expectation from memory.** The split of the 69 failed answers by reason was typed in from earlier numbers that still included duplicates. The test failed on first run, and the expectation was corrected against the feed (36, 23, 10).
+5. **It parallelised the LLM calls.** Four calls at a time looked like a free speed-up. A test with a credit budget failed: 108 calls instead of 82. The stand-in rejects every in-flight call when the limiter trips and still charges for them. Calls are now sequential.
+6. **It tried to stop a test server by killing every Node process on the machine.** The permission check blocked the command. It then started and closed the server inside the test script.
+
+What worked in catching these: checking every claim against the feed with a script before writing code, taking expected values in tests from an independent count and not from the new code, and asserting budgets (LLM calls) as well as results.
 
 ## AI setup, time spent and recording
 
-_To be completed._
+- **Tool.** Claude Code (desktop app).
+- **Rules file.** `CLAUDE.md` in the project root.
+- **Codebase graph.** `graphify-out/` (open `graph.html`), built with graphify from the code only, no LLM.
+- **Decision report.** Before any code was written, the findings and three options per decision were written up with evidence, and I chose one option for each. The choices were: tolerant ingest with accounting, exact failure rules, own detector, lazy cached LLM verdicts with a threshold, citations normalised at ingest, detector plus vendor mentions for share of voice, and 400 for a bad `days`.
+- **Session export.** TODO (author): add the exported agent sessions.
+- **Time spent.** TODO (author): add roughly how long the task took.
+- **Screen recording.** TODO (author): add the link to the recording of the most important fix. Suggested subject: problem 5, because it changes two clients' headline numbers and the feed test shows it changes nothing else.
