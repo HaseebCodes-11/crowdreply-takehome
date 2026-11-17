@@ -3,7 +3,7 @@
 import type { Answer, Brand } from './types.ts';
 
 const brands = new Map<string, Brand>();
-const answers: Answer[] = [];
+// Keyed by id, so an answer can only ever be stored once. Saving the same id again replaces it.
 const answersById = new Map<string, Answer>();
 
 export function saveBrands(list: Brand[]) {
@@ -19,7 +19,6 @@ export function listBrands() {
 }
 
 export function saveAnswer(a: Answer) {
-  answers.push(a);
   answersById.set(a.id, a);
 }
 
@@ -28,9 +27,9 @@ export function getAnswer(id: string) {
 }
 
 export function answersFor(brandId: string) {
-  return answers.filter((a) => a.brandId === brandId);
+  return allAnswers().filter((a) => a.brandId === brandId);
 }
 
 export function allAnswers() {
-  return answers;
+  return [...answersById.values()];
 }

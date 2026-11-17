@@ -1,7 +1,7 @@
 import { test, before } from 'node:test';
 import assert from 'node:assert/strict';
 import { ValidationError, checkResponse, loadAll, type IngestStats } from '../src/ingest.ts';
-import { getAnswer } from '../src/store.ts';
+import { allAnswers, answersFor, getAnswer } from '../src/store.ts';
 
 let stats: IngestStats;
 
@@ -45,6 +45,19 @@ test('an answer is kept when one of its mentions has no domain', () => {
 test('nothing in the sample feed is skipped', () => {
   assert.equal(stats.skipped, 0);
   assert.deepEqual(stats.skippedByReason, {});
+});
+
+test('an answer the vendor delivers twice is stored and counted once', async () => {
+  // r_1abf85aa322bf1 is in 2026-10-18.json and again, byte for byte, in 2026-10-19.json.
+  assert.equal(answersFor('compass').filter((a) => a.id === 'r_1abf85aa322bf1').length, 1);
+  assert.equal(stats.duplicates, 209);
+  assert.equal(stats.conflictingDuplicates, 0);
+  assert.equal(stats.saved, 3400);
+  assert.equal(allAnswers().length, 3400);
+  assert.equal(new Set(allAnswers().map((a) => a.id)).size, 3400);
+
+  await loadAll(); // loading the same feed again must not add anything
+  assert.equal(allAnswers().length, 3400);
 });
 
 test('a mention without a domain or position is kept, a mention without a name is dropped', () => {

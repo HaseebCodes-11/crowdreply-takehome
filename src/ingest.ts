@@ -21,6 +21,8 @@ export interface IngestStats {
   saved: number;
   skipped: number;
   skippedByReason: Record<string, number>;
+  duplicates: number; // repeat deliveries of an id we already had
+  conflictingDuplicates: number; // repeats whose content differed from the first copy
 }
 
 function isRecord(v: unknown): v is Record<string, unknown> {
@@ -98,11 +100,15 @@ export async function loadAll(): Promise<IngestStats> {
   saveBrands(brands);
 
   const feedDir = path.join(DATA_DIR, 'feed');
-  const stats: IngestStats = { brands: brands.length, saved: 0, skipped: 0, skippedByReason: {} };
+  const stats: IngestStats = { brands: brands.length, saved: 0, skipped: 0, skippedByReason: {}, duplicates: 0, conflictingDuplicates: 0 };
   const skip = (reason: string) => {
     stats.skipped++;
     stats.skippedByReason[reason] = (stats.skippedByReason[reason] ?? 0) + 1;
   };
+
+  // The vendor delivers some answers twice, in the same file or again in the next day's file.
+  // Collect one copy per id first, then store.
+  const unique = new Map<string, VendorResponse>();
 
   for (const file of fs.readdirSync(feedDir).filter((f) => f.endsWith('.json')).sort()) {
     const responses = readBatch(path.join(feedDir, file));
@@ -113,8 +119,18 @@ export async function loadAll(): Promise<IngestStats> {
     for (const item of responses) {
       try {
         const raw = checkResponse(item);
-        saveAnswer(toAnswer(raw, getBrand(raw.brandId)!));
-        stats.saved++;
+        const earlier = unique.get(raw.id);
+        if (!earlier) {
+          unique.set(raw.id, raw);
+          continue;
+        }
+        stats.duplicates++;
+        if (JSON.stringify(raw) !== JSON.stringify(earlier)) {
+          // Not seen in the sample feed. If a resent answer ever differs, the most recent fetch wins,
+          // and for the same fetch time the copy delivered last wins.
+          stats.conflictingDuplicates++;
+          if (Date.parse(raw.fetchedAt) >= Date.parse(earlier.fetchedAt)) unique.set(raw.id, raw);
+        }
       } catch (e) {
         if (e instanceof ValidationError) {
           skip(e.reason);
@@ -124,11 +140,17 @@ export async function loadAll(): Promise<IngestStats> {
       }
     }
   }
+
+  for (const raw of unique.values()) {
+    saveAnswer(toAnswer(raw, getBrand(raw.brandId)!));
+    stats.saved++;
+  }
   return stats;
 }
 
 // One line for the startup log.
 export function describeStats(s: IngestStats): string {
   const reasons = Object.entries(s.skippedByReason).map(([r, n]) => `${r}: ${n}`).join(', ');
-  return `Loaded ${s.brands} brands and ${s.saved} answers (${s.skipped} skipped${reasons ? `: ${reasons}` : ''}).`;
+  const conflicts = s.conflictingDuplicates ? `, ${s.conflictingDuplicates} of them with different content` : '';
+  return `Loaded ${s.brands} brands and ${s.saved} answers (${s.skipped} skipped${reasons ? `: ${reasons}` : ''}; ${s.duplicates} duplicate deliveries ignored${conflicts}).`;
 }
