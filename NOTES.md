@@ -59,6 +59,24 @@ After this fix every brand has exactly 84 counted answers per model in the 30-da
 
 **How I checked.** `test/ingest.test.ts` asserts one stored copy of `r_1abf85aa322bf1`, 209 duplicates, 3,400 stored answers with 3,400 distinct ids, and that calling `loadAll()` a second time leaves the count unchanged.
 
+### 3. The date window had a start but no end
+
+**Symptom.** No client reported this. With "today" pinned through the documented `NOW` setting, the response reported one window and counted answers from a longer one.
+
+**Root cause.** `visibility()` in `src/metrics.ts` only skipped answers with `a.day < from`. Nothing excluded answers fetched after `to`. With the default setting "today" is the newest answer in the feed, so nothing lies after it and the bug is invisible. It appears as soon as `NOW` is pinned, for example in a test, a backfill, or a report for a past date.
+
+**Change.** A new `countedAnswers(brandId, days, to)` in `src/metrics.ts` filters on both ends of the window and on status. `visibility()` uses it, and so do the competitor list and share of voice added later, so every metric counts the same answers.
+
+**Examples.** Server started with `NOW=2026-11-11`, then `GET /brands/fieldnote/visibility?days=2`. The response says `from: 2026-11-10, to: 2026-11-11` in both cases.
+
+| What | Before | After |
+|---|---|---|
+| `overall.answers` | 75 (five days of answers, Nov 10 to Nov 14) | 30 (two days) |
+| `byModel.chatgpt.answers` | 15 | 6 |
+| `r_9db15d83684df0` (Fieldnote, chatgpt, fetched 2026-11-13) | counted in the window that ends 2026-11-11 | not counted |
+
+**How I checked.** `test/metrics.test.ts` pins the end of the window to 2026-11-11 and asserts that every counted answer is dated Nov 10 or Nov 11 and that no model has more than 6 answers.
+
 ## Problems found but not fixed
 
 _To be completed._

@@ -1,5 +1,5 @@
 import { answersFor, allAnswers } from './store.ts';
-import { MODELS, type Model } from './types.ts';
+import { MODELS, type Answer, type Model } from './types.ts';
 import { NOW_OVERRIDE } from './config.ts';
 
 export function today(): string {
@@ -9,11 +9,19 @@ export function today(): string {
   return latest;
 }
 
-// First day inside a window of `days` days that ends today (inclusive).
-export function windowStart(days: number): string {
-  const d = new Date(today() + 'T00:00:00Z');
+// First day inside a window of `days` days that ends on `to` (inclusive).
+export function windowStart(days: number, to: string = today()): string {
+  const d = new Date(to + 'T00:00:00Z');
   d.setUTCDate(d.getUTCDate() - days + 1);
   return d.toISOString().slice(0, 10);
+}
+
+// The answers we count for a brand: fetched inside the window (both ends included) and not failed.
+// Every metric that looks at a window goes through here so they all count the same answers.
+export function countedAnswers(brandId: string, days: number, to: string = today()): { from: string; to: string; answers: Answer[] } {
+  const from = windowStart(days, to);
+  const answers = answersFor(brandId).filter((a) => a.day >= from && a.day <= to && a.status === 'ok');
+  return { from, to, answers };
 }
 
 export interface ModelVisibility {
@@ -23,12 +31,11 @@ export interface ModelVisibility {
 }
 
 // Share of answers that name the brand, per model, over the last `days` days.
-export function visibility(brandId: string, days: number) {
-  const from = windowStart(days);
+export function visibility(brandId: string, days: number, now: string = today()) {
+  const { from, to, answers: counted } = countedAnswers(brandId, days, now);
   const byModel = {} as Record<Model, ModelVisibility>;
   for (const m of MODELS) byModel[m] = { answers: 0, mentioned: 0, visibility: 0 };
-  for (const a of answersFor(brandId)) {
-    if (a.day < from || a.status !== 'ok') continue;
+  for (const a of counted) {
     byModel[a.model].answers++;
     if (a.ownBrandMentioned) byModel[a.model].mentioned++;
   }
@@ -40,7 +47,7 @@ export function visibility(brandId: string, days: number) {
     answers += v.answers;
     mentioned += v.mentioned;
   }
-  return { brandId, days, from, to: today(), byModel, overall: { answers, mentioned, visibility: answers ? mentioned / answers : 0 } };
+  return { brandId, days, from, to, byModel, overall: { answers, mentioned, visibility: answers ? mentioned / answers : 0 } };
 }
 
 // A brand's competitors: the brands named most often alongside it.
