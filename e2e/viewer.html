@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand visibility service: end-to-end checks</title>
+<style>
+  :root { --bg:#f5f7fa; --card:#fff; --ink:#131722; --ink2:#465064; --muted:#737c8f; --line:#dde2ea; --accent:#1c5cab; --ok:#0b6b2a; --okbg:#e4f4e8; --bad:#b42b2b; --badbg:#fbeaea; --code:#f0f3f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:19px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width:1560px; margin:0 auto; padding:24px 20px 80px; }
+  h1 { font-size:32px; margin:0 0 4px; }
+  .sub { color:var(--ink2); margin:0 0 16px; }
+  .bar { position:sticky; top:0; z-index:5; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  button { font:600 19px system-ui; background:var(--accent); color:#fff; border:0; border-radius:7px; padding:9px 18px; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  #tally { font-weight:700; font-size:22px; }
+  #tally.pass { color:var(--ok); } #tally.fail { color:var(--bad); }
+  h2 { font-size:23px; margin:26px 0 8px; }
+  h2 small { font-weight:400; color:var(--muted); font-size:16px; margin-left:8px; }
+  .check { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:8px; display:grid; grid-template-columns:96px minmax(0,1fr); gap:4px 12px; }
+  .state { grid-row:1 / span 4; align-self:start; font-size:15px; font-weight:700; letter-spacing:.04em; text-align:center; padding:4px 0; border-radius:999px; background:var(--code); color:var(--muted); }
+  .check.pass .state { background:var(--okbg); color:var(--ok); }
+  .check.fail .state { background:var(--badbg); color:var(--bad); }
+  .check.fail { border-color:var(--bad); }
+  .title { font-weight:600; }
+  code { font:16px ui-monospace,Consolas,monospace; background:var(--code); padding:1px 5px; border-radius:4px; overflow-wrap:anywhere; }
+  .req, .was, .now { font-size:17px; color:var(--ink2); overflow-wrap:anywhere; }
+  .lbl { display:inline-block; width:170px; color:var(--muted); font-size:14px; text-transform:uppercase; letter-spacing:.05em; }
+  .now b { color:var(--ink); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Brand visibility service: end-to-end checks</h1>
+  <p class="sub">Every check sends a real HTTP request to the running service and compares the response with the expected result. "Original code" is what commit 34a4b24 returned for the same request.</p>
+  <div class="bar">
+    <button id="run" type="button">Run all checks</button>
+    <span id="tally">Not run yet</span>
+    <span class="sub" style="margin:0">Service on <code>localhost:4600</code>. A second instance with <code>NOW=2026-11-11</code> on <code>localhost:4601</code>.</span>
+  </div>
+  <div id="list"></div>
+</div>
+<script>
+const MODELS = ['chatgpt', 'perplexity', 'gemini', 'google_aio', 'google_ai_mode'];
+const BRANDS = ['compass', 'barkandbloom', 'fieldnote', 'tasklane', 'lumora', 'driftwell', 'nookbox', 'peakmint'];
+const PLATFORMS = ['Reddit', 'Amazon', 'Zoom', 'Slack', 'YouTube', 'G2', 'Capterra', 'Google'];
+const RIVALS = ['Taskwyn', 'Sprintmoss', 'Boardhaven', 'Trellova', 'Plandrift', 'Kanbrik'];
+const call = async (server, path, method = 'GET') => { const r = await fetch('/' + server + path, { method }); return { status: r.status, body: await r.json() }; };
+const get = (path) => call('live', path);
+const sum = (o) => Object.values(o).reduce((a, b) => a + b, 0);
+const pct = (v) => (v * 100).toFixed(1) + '%';
+const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+const answer = (id, was, test, show) => ({ req: 'GET /responses/' + id, was, run: async () => { const { status, body } = await get('/responses/' + id); return { ok: status === 200 && test(body), now: status === 200 ? show(body) : 'HTTP ' + status }; } });
+const visibility = (brand, was, mentioned, answers) => ({ req: `GET /brands/${brand}/visibility?days=30`, was, run: async () => { const o = (await get(`/brands/${brand}/visibility?days=30`)).body.overall; return { ok: o.mentioned === mentioned && o.answers === answers, now: `${o.mentioned} of ${o.answers} answers (${pct(o.visibility)})` }; } });
+const status = (path, was, expected, method = 'GET') => ({ req: method + ' ' + path, was, run: async () => { const r = await call('live', path, method); return { ok: r.status === expected, now: `HTTP ${r.status} ${r.body.error ? '"' + r.body.error + '"' : ''}` }; } });
+
+const GROUPS = [
+  { title: 'The service is up', checks: [
+    { title: 'Lists the eight tracked brands', req: 'GET /brands', was: '8 brands', run: async () => { const { status, body } = await get('/brands'); return { ok: status === 200 && body.brands.length === 8, now: body.brands.map((b) => b.name).join(', ') }; } },
+  ] },
+  { title: '1. Ingest dropped 18% of answers', by: 'nobody noticed', checks: [
+    { title: 'An answer with a domain-less mention is stored', ...answer('r_02ed75293f5602', 'HTTP 404. The answer was never stored because "Margina" had no domain', (a) => a.ownBrandMentioned === true && a.mentions.some((m) => m.name === 'Margina' && m.domain === null), (a) => `HTTP 200, ownBrandMentioned ${a.ownBrandMentioned}, Margina kept with domain ${a.mentions.find((m) => m.name === 'Margina')?.domain}`) },
+    { title: 'A second dropped answer is stored', ...answer('r_2a8e74a45fba7d', 'HTTP 404', (a) => a.brandId === 'driftwell', (a) => `HTTP 200, ${a.brandId}, ${a.model}`) },
+  ] },
+  { title: '2. Duplicate deliveries counted twice', by: 'nobody noticed', checks: [
+    { title: 'No model has more answers than the vendor asked questions (84 in the window)', req: 'GET /brands/:id/visibility?days=30 for all 8 brands', was: 'Compass had 449 answers after fix 1: 90, 87, 92, 92, 88 per model', run: async () => { let max = 0; for (const b of BRANDS) { const v = (await get(`/brands/${b}/visibility?days=30`)).body; for (const m of MODELS) max = Math.max(max, v.byModel[m].answers); } const c = (await get('/brands/compass/visibility?days=30')).body; return { ok: max <= 84, now: `largest count for any brand and model: ${max}. Compass per model: ${MODELS.map((m) => c.byModel[m].answers).join(', ')}` }; } },
+  ] },
+  { title: '3. The date window had no end', by: 'nobody noticed', checks: [
+    { title: 'With NOW pinned to 2026-11-11, a 2-day window counts 2 days', req: 'GET /brands/fieldnote/visibility?days=2 on the NOW=2026-11-11 instance', was: '75 answers counted, everything up to Nov 14', run: async () => { const v = (await call('pinned', '/brands/fieldnote/visibility?days=2')).body; return { ok: v.from === '2026-11-10' && v.to === '2026-11-11' && v.overall.answers === 24, now: `${v.from} to ${v.to}, ${v.overall.answers} answers counted` }; } },
+  ] },
+  { title: '4. ChatGPT outage counted as "not mentioned"', by: 'Fieldnote', checks: [
+    { title: 'Empty answer is marked failed', ...answer('r_991f893225aecc', 'status "ok", counted as a miss', (a) => a.status === 'failed' && a.failureReason === 'empty_text', (a) => `status "${a.status}", failureReason "${a.failureReason}"`) },
+    { title: 'Refusal is marked failed', ...answer('r_c75b21627ed4b4', 'status "ok", counted as a miss', (a) => a.failureReason === 'refusal', (a) => `status "${a.status}", failureReason "${a.failureReason}", text "${a.text}"`) },
+    { title: 'Echoed prompt is marked failed', ...answer('r_7424f93ca93846', 'status "ok", counted as a miss', (a) => a.failureReason === 'prompt_echo', (a) => `status "${a.status}", failureReason "${a.failureReason}"`) },
+    { title: 'Fieldnote on ChatGPT during the outage is "no data", not 0%', req: 'GET /brands/fieldnote/visibility?days=2 on the NOW=2026-11-11 instance', was: 'chatgpt: 6 answers, 0 mentioned, visibility 0', run: async () => { const c = (await call('pinned', '/brands/fieldnote/visibility?days=2')).body.byModel.chatgpt; return { ok: c.answers === 0, now: `chatgpt: ${c.answers} answers counted` }; } },
+  ] },
+  { title: '5. Own-brand detection', by: 'Compass, Bark & Bloom', checks: [
+    { title: '"works like a compass for every rep" is not a mention of Compass', ...answer('r_5421763f19a03a', 'ownBrandMentioned true', (a) => a.ownBrandMentioned === false && a.vendorIsMentioned === true, (a) => `ownBrandMentioned ${a.ownBrandMentioned} (vendor still says ${a.vendorIsMentioned})`) },
+    { title: '"Bark and Bloom" is a mention of Bark & Bloom', ...answer('r_ba4dcde1405aa2', 'ownBrandMentioned false', (a) => a.ownBrandMentioned === true && a.vendorIsMentioned === false, (a) => `ownBrandMentioned ${a.ownBrandMentioned} (vendor still says ${a.vendorIsMentioned})`) },
+    { title: 'The bare domain barkandbloom.co is a mention', ...answer('r_81f61cfe3c1e34', 'ownBrandMentioned false', (a) => a.ownBrandMentioned === true, (a) => `ownBrandMentioned ${a.ownBrandMentioned}`) },
+    { title: 'Compass 30-day visibility', ...visibility('compass', '204 of 369 answers (55.3%)', 174, 412) },
+    { title: 'Bark & Bloom 30-day visibility', ...visibility('barkandbloom', '94 of 356 answers (26.4%)', 160, 415) },
+  ] },
+  { title: '6. Competitor list full of platforms', by: 'Tasklane', checks: [
+    { title: 'Tasklane has its six real competitors, each with a working domain', req: 'GET /brands/tasklane/competitors', was: '…Kanbrik 169, Plandrift 168, Reddit 150, Amazon 146, Zoom 144, Slack 141. Sprintmoss shown with the parked sprintmoss.com', run: async () => { const list = (await get('/brands/tasklane/competitors')).body.competitors; const names = list.map((c) => c.name); return { ok: same(names, RIVALS) && !names.some((n) => PLATFORMS.includes(n)) && list.find((c) => c.name === 'Sprintmoss').domain === 'sprintmoss.app' && list.find((c) => c.name === 'Plandrift').domain === 'plandrift.io', now: list.map((c) => `${c.name} ${c.mentions} (${c.domain})`).join(', ') }; } },
+    { title: 'A competitor whose domain fails DNS is kept', req: 'GET /brands/fieldnote/competitors', was: 'listed, but so were Google, Wikipedia, Reddit and YouTube', run: async () => { const list = (await get('/brands/fieldnote/competitors')).body.competitors; const ink = list.find((c) => c.name === 'Inkpond'); return { ok: !!ink && ink.domain === 'inkpond.com' && list.length === 5, now: list.map((c) => `${c.name} (${c.domain})`).join(', ') }; } },
+  ] },
+  { title: '7. Citations were not usable links', by: 'Driftwell', checks: [
+    { title: 'Google AI Overview citations are full links to the cited pages', req: 'GET /responses/r_2a8e74a45fba7d', was: 'not stored. Raw citations are /url?q=…, /goto?url=…, /goto?url=…, /search?q=…', run: async () => { const a = (await get('/responses/r_2a8e74a45fba7d')).body; return { ok: same(a.citations, ['https://restwave.com/', 'https://dozely.com/blog/best-app-to-improve-sleep', 'https://driftwell.app/']), now: a.citations.join(' , ') }; } },
+    { title: 'Gemini redirect links are resolved and the dead one is dropped', req: 'GET /responses/r_dc44bd5062834e', was: 'two vertexaisearch.cloud.google.com redirect links, one of them a 404', run: async () => { const a = (await get('/responses/r_dc44bd5062834e')).body; return { ok: same(a.citations, ['https://www.reddit.com/r/project-management/comments/292055']), now: a.citations.join(' , ') + ` (from ${a.rawCitations.length} raw links)` }; } },
+  ] },
+  { title: '8. A bad days value', by: 'nobody noticed', checks: [
+    { title: 'days=abc is rejected', ...status('/brands/tasklane/visibility?days=abc', 'HTTP 500 "Something went wrong."', 400) },
+    { title: 'days=0 is rejected', ...status('/brands/tasklane/visibility?days=0', 'HTTP 200 with a window from 2026-11-15 to 2026-11-14', 400) },
+    { title: 'days=7 still works', req: 'GET /brands/tasklane/visibility?days=7', was: 'HTTP 200, 2026-11-08 to 2026-11-14', run: async () => { const r = await get('/brands/tasklane/visibility?days=7'); return { ok: r.status === 200 && r.body.from === '2026-11-08' && r.body.to === '2026-11-14', now: `HTTP ${r.status}, ${r.body.from} to ${r.body.to}` }; } },
+  ] },
+  { title: 'Feature: share of voice', by: 'new endpoint', checks: [
+    { title: 'Tasklane on ChatGPT over 90 days', req: 'GET /brands/tasklane/share-of-voice?days=90', was: 'HTTP 404, the endpoint did not exist', run: async () => { const r = await get('/brands/tasklane/share-of-voice?days=90'); const s = r.body.byModel.chatgpt; return { ok: r.status === 200 && same(r.body.competitors, RIVALS) && Math.round(s.Tasklane * 1000) === 151 && Math.abs(sum(s) - 1) < 1e-9, now: Object.entries(s).map(([n, v]) => `${n} ${pct(v)}`).join(', ') + `. Sum ${sum(s).toFixed(3)}` }; } },
+    { title: 'Shares add up to 1 for every brand and model', req: 'GET /brands/:id/share-of-voice?days=90 for all 8 brands', was: 'HTTP 404', run: async () => { let worst = 0, n = 0; for (const b of BRANDS) { const v = (await get(`/brands/${b}/share-of-voice?days=90`)).body; for (const m of MODELS) { worst = Math.max(worst, Math.abs(sum(v.byModel[m]) - 1)); n++; } } return { ok: worst < 1e-9 && n === 40, now: `${n} brand and model pairs checked, largest distance from 1 is ${worst.toExponential(1)}` }; } },
+    { title: 'Its competitors are exactly the /competitors list', req: 'GET /brands/compass/share-of-voice and /brands/compass/competitors', was: 'HTTP 404', run: async () => { const a = (await get('/brands/compass/share-of-voice')).body.competitors; const b = (await get('/brands/compass/competitors')).body.competitors.map((c) => c.name); return { ok: same(a, b), now: a.join(', ') }; } },
+  ] },
+  { title: 'Errors', checks: [
+    { title: 'Unknown brand', ...status('/brands/nope/visibility', 'HTTP 404', 404) },
+    { title: 'Unknown route', ...status('/nothing/here', 'HTTP 404', 404) },
+    { title: 'Only GET is accepted', ...status('/brands', 'HTTP 405', 405, 'POST') },
+  ] },
+];
+
+const list = document.getElementById('list');
+const rows = [];
+for (const g of GROUPS) {
+  const h = document.createElement('h2');
+  h.textContent = g.title;
+  if (g.by) { const s = document.createElement('small'); s.textContent = 'reported by: ' + g.by; h.appendChild(s); }
+  list.appendChild(h);
+  for (const c of g.checks) {
+    const el = document.createElement('div');
+    el.className = 'check';
+    el.innerHTML = '<div class="state">WAITING</div><div class="title"></div><div class="req"><span class="lbl">Request</span><code></code></div><div class="was"><span class="lbl">Original code</span><span></span></div><div class="now"><span class="lbl">Now</span><b>not run</b></div>';
+    el.querySelector('.title').textContent = c.title;
+    el.querySelector('.req code').textContent = c.req;
+    el.querySelector('.was span:last-child').textContent = c.was;
+    list.appendChild(el);
+    rows.push({ c, el });
+  }
+}
+
+const tally = document.getElementById('tally');
+const button = document.getElementById('run');
+window.e2e = { done: false, passed: 0, failed: 0, total: rows.length, failures: [] };
+button.addEventListener('click', async () => {
+  button.disabled = true;
+  window.e2e = { done: false, passed: 0, failed: 0, total: rows.length, failures: [] };
+  for (const { el } of rows) { el.className = 'check'; el.querySelector('.state').textContent = 'WAITING'; el.querySelector('.now b').textContent = 'not run'; }
+  for (const { c, el } of rows) {
+    let result;
+    try { result = await c.run(); } catch (e) { result = { ok: false, now: 'error: ' + e.message }; }
+    el.className = 'check ' + (result.ok ? 'pass' : 'fail');
+    el.querySelector('.state').textContent = result.ok ? 'PASS' : 'FAIL';
+    el.querySelector('.now b').textContent = result.now;
+    if (result.ok) window.e2e.passed++; else { window.e2e.failed++; window.e2e.failures.push(c.title + ' -> ' + result.now); }
+    tally.textContent = `${window.e2e.passed} of ${rows.length} passed` + (window.e2e.failed ? `, ${window.e2e.failed} failed` : '');
+    tally.className = window.e2e.failed ? 'fail' : 'pass';
+  }
+  window.e2e.done = true;
+  button.disabled = false;
+});
+</script>
+</body>
+</html>

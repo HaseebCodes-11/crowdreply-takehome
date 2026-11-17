@@ -41,7 +41,7 @@ Effect on 30-day visibility (2026-10-16 to 2026-11-14, all models), original cod
 | Nook-Box | 133 of 368 (36.1%) | 160 of 408 (39.2%) |
 | Peakmint | 146 of 363 (40.2%) | 163 of 410 (39.8%) |
 
-The tests went from 8 to 60. The original 8 are unchanged and pass. `npm run typecheck` is clean.
+The tests went from 8 to 72. Twelve of them are end-to-end (`test/e2e.test.ts`): they start the real server as a separate process and use only HTTP. The original 8 are unchanged and pass. `npm run typecheck` is clean.
 
 ## Problems found and fixed
 
