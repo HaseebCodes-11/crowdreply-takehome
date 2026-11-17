@@ -1,0 +1,325 @@
+{
+  "communities": {
+    "0": [
+      "src_competitors",
+      "src_competitors_askllm",
+      "src_competitors_bare",
+      "src_competitors_candidate",
+      "src_competitors_candidates",
+      "src_competitors_competitor",
+      "src_competitors_domainhealth",
+      "src_competitors_domainhealth_41e5264fa573",
+      "src_competitors_health",
+      "src_competitors_isrealcompetitor",
+      "src_competitors_min_answers_to_classify",
+      "src_competitors_pickdomain",
+      "src_competitors_redirectsaway",
+      "src_competitors_verdicts",
+      "src_lib_dns_lookupdomain",
+      "src_lib_llm",
+      "src_lib_llm_classifycompetitor",
+      "src_lib_llm_competitorverdict",
+      "src_lib_llm_llmratelimiterror",
+      "src_lib_llm_llmusage",
+      "src_store_listbrands",
+      "src_types_brand",
+      "test_competitors_test"
+    ],
+    "1": [
+      "ref_node_http",
+      "ref_node_net",
+      "src_competitors_competitors",
+      "src_ingest_describestats",
+      "src_server",
+      "src_server_badrequest",
+      "src_server_createserver",
+      "src_server_daysparam",
+      "src_server_handler",
+      "src_server_notfound",
+      "src_server_routes",
+      "src_shareofvoice",
+      "src_shareofvoice_shareofvoice",
+      "src_store_getbrand",
+      "test_api_test",
+      "test_api_test_get",
+      "test_share_of_voice_test",
+      "test_share_of_voice_test_get",
+      "test_share_of_voice_test_models",
+      "test_share_of_voice_test_round3",
+      "test_share_of_voice_test_sum",
+      "test_share_of_voice_test_tasklane_rivals"
+    ],
+    "2": [
+      "ref_node_assert",
+      "ref_node_test",
+      "src_ingest_ingeststats",
+      "src_metrics",
+      "src_metrics_countedanswers",
+      "src_metrics_modelvisibility",
+      "src_metrics_today",
+      "src_metrics_visibility",
+      "src_metrics_windowstart",
+      "src_store",
+      "src_store_allanswers",
+      "src_store_answersbyid",
+      "src_store_answersfor",
+      "src_store_brands",
+      "src_store_getanswer",
+      "src_types_answer",
+      "test_detect_feed_test",
+      "test_failure_test",
+      "test_ingest_test",
+      "test_ingest_test_valid",
+      "test_metrics_test"
+    ],
+    "3": [
+      "src_failure",
+      "src_failure_failurereason",
+      "src_ingest",
+      "src_ingest_checkresponse",
+      "src_ingest_cleanmentions",
+      "src_ingest_isrecord",
+      "src_ingest_loadall",
+      "src_ingest_readbatch",
+      "src_ingest_toanswer",
+      "src_ingest_validationerror",
+      "src_ingest_validationerror_constructor",
+      "src_store_saveanswer",
+      "src_store_savebrands",
+      "src_types",
+      "src_types_failurereason",
+      "src_types_mention",
+      "src_types_model",
+      "src_types_models",
+      "src_types_vendormention",
+      "src_types_vendorresponse",
+      "test_ingest_test_reasonfor"
+    ],
+    "4": [
+      "package",
+      "package_devdependencies",
+      "package_devdependencies_types_node",
+      "package_devdependencies_typescript",
+      "package_engines",
+      "package_engines_node",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_start",
+      "package_scripts_test",
+      "package_scripts_typecheck",
+      "package_type",
+      "package_version",
+      "ref_types_node",
+      "ref_typescript"
+    ],
+    "5": [
+      "src_citations",
+      "src_citations_destinations",
+      "src_citations_follow",
+      "src_citations_headwithretry",
+      "src_citations_isgooglesearchhost",
+      "src_citations_isredirectlink",
+      "src_citations_normalizecitations",
+      "src_citations_parse",
+      "src_citations_resolveredirects",
+      "src_citations_target_params",
+      "src_citations_unwrap",
+      "src_lib_http_head",
+      "src_util",
+      "src_util_maplimit",
+      "src_util_sleep",
+      "test_citations_test"
+    ],
+    "6": [
+      "src_detect",
+      "src_detect_domainregex",
+      "src_detect_escape",
+      "src_detect_isownbrandmentioned",
+      "src_detect_matcher",
+      "src_detect_matcherfor",
+      "src_detect_matchers",
+      "src_detect_nameregex",
+      "test_detect_test",
+      "test_detect_test_bark",
+      "test_detect_test_compass",
+      "test_detect_test_nook",
+      "test_detect_test_tasklane"
+    ],
+    "7": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowimportingtsextensions",
+      "tsconfig_compileroptions_erasablesyntaxonly",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_types",
+      "tsconfig_compileroptions_verbatimmodulesyntax",
+      "tsconfig_include"
+    ],
+    "8": [
+      "ref_node_fs",
+      "ref_node_path",
+      "src_config",
+      "src_config_data_dir",
+      "src_config_now_override",
+      "src_config_port",
+      "src_lib_dns",
+      "src_lib_dns_dnsrecord",
+      "src_lib_dns_dnsstatus",
+      "src_lib_http",
+      "src_lib_http_headresult"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1383399209486166,
+    "1": 0.15151515151515152,
+    "2": 0.23333333333333334,
+    "3": 0.18095238095238095,
+    "4": 0.14166666666666666,
+    "5": 0.2833333333333333,
+    "6": 0.23076923076923078,
+    "7": 0.15384615384615385,
+    "8": 0.2727272727272727
+  },
+  "gods": [
+    {
+      "id": "src_ingest_loadall",
+      "label": "loadAll()",
+      "degree": 17
+    },
+    {
+      "id": "src_competitors_competitors",
+      "label": "competitors()",
+      "degree": 12
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 11
+    },
+    {
+      "id": "src_store_getbrand",
+      "label": "getBrand()",
+      "degree": 9
+    },
+    {
+      "id": "src_store_allanswers",
+      "label": "allAnswers()",
+      "degree": 8
+    },
+    {
+      "id": "src_ingest_checkresponse",
+      "label": "checkResponse()",
+      "degree": 8
+    },
+    {
+      "id": "src_citations_unwrap",
+      "label": "unwrap()",
+      "degree": 8
+    },
+    {
+      "id": "src_metrics_countedanswers",
+      "label": "countedAnswers()",
+      "degree": 7
+    },
+    {
+      "id": "src_store_answersfor",
+      "label": "answersFor()",
+      "degree": 7
+    },
+    {
+      "id": "src_store_getanswer",
+      "label": "getAnswer()",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "reasonFor()",
+      "target": "checkResponse()",
+      "source_files": [
+        "test/ingest.test.ts",
+        "src/ingest.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `reasonFor()` unexpectedly reaches hub `checkResponse()`"
+    },
+    {
+      "source": "askLlm()",
+      "target": "sleep()",
+      "source_files": [
+        "src/competitors.ts",
+        "src/util.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "competitors()",
+      "target": "today()",
+      "source_files": [
+        "src/competitors.ts",
+        "src/metrics.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "competitors()",
+      "target": "answersFor()",
+      "source_files": [
+        "src/competitors.ts",
+        "src/store.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "competitors()",
+      "target": "mapLimit()",
+      "source_files": [
+        "src/competitors.ts",
+        "src/util.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `loadAll()` connect `HTTP API layer: server routes, handlers, API tests` to `Ingest pipeline: vendor feed -> validation -> brand detection -> in-memory store`, `package.json: scripts, engines, dev dependencies`, `Offline service stand-ins: DNS resolver, HTTP HEAD, LLM classifier (+ DATA_DIR config)`, `Metrics: visibility windows, competitors, date handling`?",
+      "why": "High betweenness centrality (0.016) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Ingest pipeline: vendor feed -> validation -> brand detection -> in-memory store` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1383399209486166 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Brand` connect `Ingest pipeline: vendor feed -> validation -> brand detection -> in-memory store` to `Offline service stand-ins: DNS resolver, HTTP HEAD, LLM classifier (+ DATA_DIR config)`, `HTTP API layer: server routes, handlers, API tests`, `detect.ts`?",
+      "why": "High betweenness centrality (0.013) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `tsconfig.json: TypeScript compiler options` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.14166666666666666 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `competitors()` connect `package.json: scripts, engines, dev dependencies` to `Ingest pipeline: vendor feed -> validation -> brand detection -> in-memory store`, `Offline service stand-ins: DNS resolver, HTTP HEAD, LLM classifier (+ DATA_DIR config)`, `Metrics: visibility windows, competitors, date handling`?",
+      "why": "High betweenness centrality (0.011) - this node is a cross-community bridge."
+    }
+  ]
+}
