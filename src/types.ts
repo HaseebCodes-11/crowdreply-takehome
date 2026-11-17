@@ -46,7 +46,8 @@ export interface Answer {
   ownBrandMentioned: boolean; // our own reading of the text, see detect.ts
   vendorIsMentioned: boolean; // what the vendor claimed. Kept for audit, never used in a metric
   mentions: Mention[]; // other brands named in the answer
-  citations: string[];
+  citations: string[]; // full links to the cited pages, ready to show, see citations.ts
+  rawCitations: string[]; // the citations exactly as the vendor sent them
 }
 
 export interface Mention {

@@ -2,6 +2,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { normalizeCitations, resolveRedirects } from './citations.ts';
 import { DATA_DIR } from './config.ts';
 import { isOwnBrandMentioned } from './detect.ts';
 import { failureReason } from './failure.ts';
@@ -26,6 +27,8 @@ export interface IngestStats {
   conflictingDuplicates: number; // repeats whose content differed from the first copy
   failed: number; // stored, but marked 'failed' and left out of every metric
   failedByReason: Record<string, number>;
+  citationsRewritten: number; // wrapper and redirect links replaced by the page they point at
+  citationsDropped: number; // search-page links, dead redirect links, repeats
 }
 
 function isRecord(v: unknown): v is Record<string, unknown> {
@@ -85,7 +88,8 @@ function toAnswer(raw: VendorResponse, brand: Brand): Answer {
     ownBrandMentioned: isOwnBrandMentioned(raw.text, brand),
     vendorIsMentioned: raw.isMentioned,
     mentions: raw.mentions.filter((m) => m.name !== brand.name).map((m) => ({ name: m.name, domain: m.domain, position: m.position })),
-    citations: raw.citations,
+    citations: normalizeCitations(raw.citations),
+    rawCitations: raw.citations,
   };
 }
 
@@ -106,7 +110,7 @@ export async function loadAll(): Promise<IngestStats> {
   saveBrands(brands);
 
   const feedDir = path.join(DATA_DIR, 'feed');
-  const stats: IngestStats = { brands: brands.length, saved: 0, skipped: 0, skippedByReason: {}, duplicates: 0, conflictingDuplicates: 0, failed: 0, failedByReason: {} };
+  const stats: IngestStats = { brands: brands.length, saved: 0, skipped: 0, skippedByReason: {}, duplicates: 0, conflictingDuplicates: 0, failed: 0, failedByReason: {}, citationsRewritten: 0, citationsDropped: 0 };
   const skip = (reason: string) => {
     stats.skipped++;
     stats.skippedByReason[reason] = (stats.skippedByReason[reason] ?? 0) + 1;
@@ -147,10 +151,15 @@ export async function loadAll(): Promise<IngestStats> {
     }
   }
 
+  // Gemini cites through redirect links. Find out where they lead before building the answers.
+  await resolveRedirects([...unique.values()].flatMap((r) => r.citations));
+
   for (const raw of unique.values()) {
     const answer = toAnswer(raw, getBrand(raw.brandId)!);
     saveAnswer(answer);
     stats.saved++;
+    stats.citationsDropped += answer.rawCitations.length - answer.citations.length;
+    stats.citationsRewritten += answer.citations.filter((c) => !answer.rawCitations.includes(c)).length;
     if (answer.failureReason) {
       stats.failed++;
       stats.failedByReason[answer.failureReason] = (stats.failedByReason[answer.failureReason] ?? 0) + 1;
@@ -165,5 +174,5 @@ export function describeStats(s: IngestStats): string {
   const reasons = list(s.skippedByReason);
   const failures = s.failed ? ` ${s.failed} answers are marked failed and not counted (${list(s.failedByReason)}).` : '';
   const conflicts = s.conflictingDuplicates ? `, ${s.conflictingDuplicates} of them with different content` : '';
-  return `Loaded ${s.brands} brands and ${s.saved} answers (${s.skipped} skipped${reasons ? `: ${reasons}` : ''}; ${s.duplicates} duplicate deliveries ignored${conflicts}).${failures}`;
+  return `Loaded ${s.brands} brands and ${s.saved} answers (${s.skipped} skipped${reasons ? `: ${reasons}` : ''}; ${s.duplicates} duplicate deliveries ignored${conflicts}).${failures} Citations: ${s.citationsRewritten} rewritten to the page they point at, ${s.citationsDropped} dropped.`;
 }

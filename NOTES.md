@@ -163,6 +163,45 @@ The counts went up for real competitors because problems 1 and 2 are fixed: the 
 
 **How I checked.** `test/competitors.test.ts` asserts the exact Tasklane list with domains and counts, that no platform is in it, that classifying Tasklane takes exactly 16 LLM calls (15 names plus one rate-limit retry), that repeated and concurrent requests cost no further calls, that Inkpond is kept with `inkpond.com`, that Pipewell shows `pipewell.io`, and that all eight brands together stay under 90 calls. The expected counts in the test came from an independent script over the raw feed, not from the new code.
 
+### 7. Google citations were stored as received and were not usable links (Driftwell's complaint)
+
+**Symptom.** "When I click a source under a Google AI Overview answer in your app, I land on a 404 page on your own website."
+
+**Root cause.** `toAnswer()` in `src/ingest.ts` stored `citations` exactly as the vendor sent them. The README promises "full `https://` links" that the app shows as clickable. Three models send those. The two Google ones do not:
+
+| Model | What it sends | Count (unique answers) |
+|---|---|---|
+| google_aio | links relative to google.com: `/url?q=<page>`, `/goto?url=<page>&ref=aio` | 696 |
+| google_aio | `/search?q=<query>`, a Google search page and not a source | 202 |
+| google_aio | the same wrapper as a full link: `https://www.google.com/url?q=<page>` | 337 |
+| gemini | opaque redirect links: `https://vertexaisearch.cloud.google.com/grounding-api-redirect/<token>` | 1,072 distinct links, 126 of them dead |
+
+A relative link rendered in our app resolves against our own domain. That is the 404 on our own website. The `google.com/url` wrappers and the Gemini redirect links are technically https links, but they send the client through Google, and 126 of the Gemini ones lead nowhere.
+
+**Change.** New `src/citations.ts`, applied at ingest so the store holds clean data.
+
+- Google wrapper links, relative or absolute, are opened to the page in their `q` or `url` parameter. The wrapper's own tracking parameters go away with it. The page's own query string is kept.
+- Google pages that are not a cited source (`/search`) are dropped, and so is anything that is not an http or https link.
+- Gemini redirect links are resolved with `head()`: a redirect becomes its `Location`, a 4xx drops the link, a 5xx or network error is retried and then the link is kept as it is. Each distinct link is checked once, 16 at a time.
+- Repeats within an answer are removed and the order is kept.
+- The original list is kept in the new field `rawCitations`.
+
+The cost is 1,072 `head()` calls at startup, which takes the load from about 0.04 s to about 0.9 s here.
+
+**Examples.**
+
+| Answer | Before | After |
+|---|---|---|
+| `r_2a8e74a45fba7d` (Driftwell, google_aio) | was not stored at all (problem 1). Its four citations are `/url?q=https%3A%2F%2Frestwave.com%2F&sa=U…`, `/goto?url=https%3A%2F%2Fdozely.com%2Fblog%2Fbest-app-to-improve-sleep&ref=aio`, `/goto?url=https%3A%2F%2Fdriftwell.app%2F&ref=aio`, `/search?q=best%20app%20to%20improve%20sleep…` | `https://restwave.com/`, `https://dozely.com/blog/best-app-to-improve-sleep`, `https://driftwell.app/` |
+| `r_03e0508f6029dd` (Tasklane, google_aio) | `https://www.google.com/url?q=https%3A%2F%2Fkanbrik.com%2F&sa=U&ved=…`, `/goto?url=https%3A%2F%2Fsprintmoss.app%2Fblog%2F…&ref=aio`, `/search?q=…` | `https://kanbrik.com/`, `https://sprintmoss.app/blog/best-project-management-software-for-agencies` |
+| `r_dc44bd5062834e` (Tasklane, gemini) | two `vertexaisearch.cloud.google.com/grounding-api-redirect/…` links, the first of which returns 404 | `https://www.reddit.com/r/project-management/comments/292055` |
+| `r_81f61cfe3c1e34` (Bark & Bloom, gemini) | three redirect links | `https://barkandbloom.co/`, `https://furrowfinch.com/`, `https://brinora.com/blog/best-natural-dog-shampoo` |
+| `loadAll()` | no citation handling | `citationsRewritten: 1981, citationsDropped: 328` |
+
+Per model after the fix: google_aio keeps 1,338 of 1,540 citations (the 202 search links go), gemini keeps 1,248 of 1,374 (the 126 dead ones go), and the other three models are untouched. 21 Gemini answers end up with no citations because every link they cited is dead.
+
+**How I checked.** `test/citations.test.ts` covers each wrapper shape, the dropped shapes, ordering and repeats, and a redirect link that is not in the sample data (kept as it is). Against the feed it asserts the exact before and after of `r_2a8e74a45fba7d`, that `r_dc44bd5062834e` loses its dead link, and that every stored citation in all 3,400 answers starts with `https://`, is not on google.com and is not repeated.
+
 ## Problems found but not fixed
 
 _To be completed._
