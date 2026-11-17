@@ -202,6 +202,30 @@ Per model after the fix: google_aio keeps 1,338 of 1,540 citations (the 202 sear
 
 **How I checked.** `test/citations.test.ts` covers each wrapper shape, the dropped shapes, ordering and repeats, and a redirect link that is not in the sample data (kept as it is). Against the feed it asserts the exact before and after of `r_2a8e74a45fba7d`, that `r_dc44bd5062834e` loses its dead link, and that every stored citation in all 3,400 answers starts with `https://`, is not on google.com and is not repeated.
 
+### 8. A bad `days` value crashed the request or returned a nonsense window
+
+**Symptom.** No client reported this. `GET /brands/tasklane/visibility?days=abc` returned `500 {"error":"Something went wrong."}` and logged a `RangeError: Invalid time value`.
+
+**Root cause.** The route in `src/server.ts` passed `Number(q.get('days') ?? 30)` straight into `windowStart()`. `Number('abc')` is `NaN`, which produces an invalid date. Zero, negative and fractional values did not crash but produced windows nobody could mean.
+
+**Change.** A `daysParam()` helper in `src/server.ts` accepts a whole number from 1 to 365 and uses the default when the parameter is absent. Anything else returns `400 {"error":"days must be a whole number from 1 to 365."}`. Valid requests behave exactly as before. There is no answer id for this one because it does not depend on the data.
+
+**Examples.**
+
+| Request | Before | After |
+|---|---|---|
+| `?days=abc` | 500 | 400 |
+| `?days=0` | 200, window `2026-11-15` to `2026-11-14` (starts after it ends) | 400 |
+| `?days=-5` | 200, window `2026-11-20` to `2026-11-14` | 400 |
+| `?days=1.5` | 200, window `2026-11-13` to `2026-11-14` | 400 |
+| `?days=366` | 200 | 400 |
+| `?days=7` | 200, `2026-11-08` to `2026-11-14` | unchanged |
+| no `days` | 200, 30 days | unchanged |
+
+The upper limit of 365 is my choice, not something the brief asks for. If another part of the product sends larger values today, this is the one line to change (`MAX_DAYS`).
+
+**How I checked.** `test/api.test.ts` sends each bad value and expects 400 with the message, and checks that 1, 365 and the default still work.
+
 ## Problems found but not fixed
 
 _To be completed._

@@ -58,3 +58,31 @@ test('a single answer can be fetched by id', async () => {
 test('unknown brands return 404', async () => {
   assert.equal((await get('/brands/nope/visibility')).status, 404);
 });
+
+test('a days value that is not a whole number from 1 to 365 is rejected', async () => {
+  for (const bad of ['abc', '0', '-5', '1.5', '366', '', '7days', '1e2']) {
+    const { status, body } = await get(`/brands/tasklane/visibility?days=${bad}`);
+    assert.equal(status, 400, `days=${bad}`);
+    assert.equal(body.error, 'days must be a whole number from 1 to 365.');
+  }
+});
+
+test('valid days values still work, and the default is 30', async () => {
+  assert.equal((await get('/brands/tasklane/visibility?days=1')).body.days, 1);
+  assert.equal((await get('/brands/tasklane/visibility?days=365')).body.days, 365);
+  const byDefault = (await get('/brands/tasklane/visibility')).body;
+  assert.equal(byDefault.days, 30);
+  assert.equal(byDefault.from, '2026-10-16');
+  assert.equal(byDefault.to, '2026-11-14');
+});
+
+test('a stored answer carries the fields the README documents, plus the added ones', async () => {
+  const { status, body } = await get('/responses/r_81879a839cfca2');
+  assert.equal(status, 200);
+  for (const key of ['id', 'brandId', 'model', 'prompt', 'fetchedAt', 'day', 'status', 'text', 'ownBrandMentioned', 'mentions', 'citations']) {
+    assert.ok(key in body, `${key} is present`);
+  }
+  for (const key of ['failureReason', 'vendorIsMentioned', 'rawCitations']) assert.ok(key in body, `${key} is added`);
+  assert.equal(body.status, 'ok');
+  assert.ok(!body.mentions.some((m: any) => m.name === 'Compass'), 'mentions list other brands only');
+});

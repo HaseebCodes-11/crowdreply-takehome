@@ -8,12 +8,25 @@ import { getAnswer, getBrand, listBrands } from './store.ts';
 type Handler = (params: string[], query: URLSearchParams) => unknown | Promise<unknown>;
 
 class NotFound extends Error {}
+class BadRequest extends Error {}
+
+const MAX_DAYS = 365;
+
+// The `days` query parameter: a whole number of days from 1 to 365. Left out, it is `fallback`.
+// Anything else is the caller's mistake and gets a 400, not a window nobody asked for.
+function daysParam(q: URLSearchParams, fallback: number): number {
+  const raw = q.get('days');
+  if (raw === null) return fallback;
+  const n = /^\d+$/.test(raw) ? Number(raw) : NaN;
+  if (!(n >= 1 && n <= MAX_DAYS)) throw new BadRequest(`days must be a whole number from 1 to ${MAX_DAYS}.`);
+  return n;
+}
 
 const routes: [RegExp, Handler][] = [
   [/^\/brands$/, () => ({ brands: listBrands() })],
   [/^\/brands\/([\w-]+)\/visibility$/, ([id], q) => {
     if (!getBrand(id)) throw new NotFound();
-    return visibility(id, Number(q.get('days') ?? 30));
+    return visibility(id, daysParam(q, 30));
   }],
   [/^\/brands\/([\w-]+)\/competitors$/, async ([id]) => {
     if (!getBrand(id)) throw new NotFound();
@@ -41,6 +54,7 @@ export function createServer() {
         return send(200, await handler(m.slice(1), url.searchParams));
       } catch (e) {
         if (e instanceof NotFound) return send(404, { error: 'Not found.' });
+        if (e instanceof BadRequest) return send(400, { error: e.message });
         console.error(e);
         return send(500, { error: 'Something went wrong.' });
       }
