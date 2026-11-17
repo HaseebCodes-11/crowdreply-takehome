@@ -1,7 +1,8 @@
 import http from 'node:http';
 import { PORT } from './config.ts';
 import { describeStats, loadAll } from './ingest.ts';
-import { competitors, visibility } from './metrics.ts';
+import { competitors } from './competitors.ts';
+import { visibility } from './metrics.ts';
 import { getAnswer, getBrand, listBrands } from './store.ts';
 
 type Handler = (params: string[], query: URLSearchParams) => unknown | Promise<unknown>;
@@ -14,9 +15,9 @@ const routes: [RegExp, Handler][] = [
     if (!getBrand(id)) throw new NotFound();
     return visibility(id, Number(q.get('days') ?? 30));
   }],
-  [/^\/brands\/([\w-]+)\/competitors$/, ([id]) => {
+  [/^\/brands\/([\w-]+)\/competitors$/, async ([id]) => {
     if (!getBrand(id)) throw new NotFound();
-    return { brandId: id, competitors: competitors(id) };
+    return { brandId: id, competitors: await competitors(id) };
   }],
   [/^\/responses\/([\w-]+)$/, ([id]) => {
     const a = getAnswer(id);

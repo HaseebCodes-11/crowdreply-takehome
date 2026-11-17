@@ -129,6 +129,40 @@ Known limit: a sentence that begins with the generic word, such as "Compass read
 
 **How I checked.** `test/detect.test.ts` keeps the two original tests and adds cases for the common noun, capitalised and all-caps names, longer words ("Compassion", "encompass"), every way of writing the "&", hyphen variants, domain-only mentions and lookalike domains. `test/detect-feed.test.ts` runs against the real feed. It asserts the four answers above and, most importantly, that our result differs from the vendor's on exactly 65 Compass answers and 55 Bark & Bloom answers and on nothing for the other six brands. That shows the new detector changes only what was wrong.
 
+### 6. The competitor list was a raw count of every name the vendor found (Tasklane's complaint)
+
+**Symptom.** "Our competitor list includes Reddit, Amazon, Zoom and Slack. We sell project management software."
+
+**Root cause.** `competitors()` in `src/metrics.ts` counted every entry in the vendor's `mentions` and returned the ten most frequent. The vendor lists every name it finds in an answer: real competitors, but also platforms (Reddit, Amazon, YouTube, G2), the AI engines themselves (Perplexity, ChatGPT) and a long tail of one-off names. Each brand has 52 to 55 such names and only 5 or 6 are competitors. Three more things were wrong in the same function:
+
+- It counted failed answers and had no date bound.
+- It showed the first domain it happened to see. The vendor reports two domains for some brands, and one of them is wrong: `plandrift.com` and `pipewellhq.com` do not exist, and `sprintmoss.com` resolves but redirects to a domain marketplace. `sprintmoss.com` was the domain shown for Sprintmoss.
+- It never used the LLM classifier or the DNS resolver that the codebase provides for exactly this.
+
+**Change.** New `src/competitors.ts`. For a brand it counts each name once per counted answer (not failed, not after "today"), asks `classifyCompetitor()` about the names that appear in at least 20 answers, and keeps the ones the LLM confirms. For each competitor it picks the most-cited domain that `lookupDomain()` confirms is live and serving its own site.
+
+Decisions inside that:
+
+- **Cost.** The LLM is treated as paid and rate limited. Verdicts are cached per brand and name for the life of the process, and the cached value is the promise, so concurrent requests share one call. The work is lazy, on a brand's first request. The 20-answer threshold means about 10 names per brand are classified and not 54. Real competitors are named in 190 or more answers and the one-off names in 7 or fewer, so the threshold loses nothing here. Total for all eight brands: 82 credits. Classifying every name would be 464.
+- **Rate limits.** `LlmRateLimitError` is retried with a growing wait, up to four times. A verdict that fails for good is not cached. Calls go one at a time. I first ran four in parallel and measured 108 credits instead of 82, because when the limiter trips it rejects every call in flight and a rejected call still costs a credit.
+- **DNS failures.** `servfail` is retried twice and then treated as "unknown", never as "dead". `inkpond.com` returns `servfail` and is the only domain of a real competitor that is named in 250 answers. Dropping it would be wrong. A dead or parked domain is never shown. If no domain can be confirmed the field is `null`.
+
+The route's path and shape are unchanged: `{ "brandId", "competitors": [ { "name", "domain", "mentions" } ] }`. The list is now 5 or 6 entries long because that is how many real competitors each brand has.
+
+**Examples.**
+
+| What | Before | After |
+|---|---|---|
+| `GET /brands/tasklane/competitors` | Taskwyn 194, Sprintmoss 186, Boardhaven 178, Trellova 173, Kanbrik 169, Plandrift 168, **Reddit 150, Amazon 146, Zoom 144, Slack 141** | Taskwyn 218, Sprintmoss 208, Boardhaven 206, Trellova 205, Plandrift 202, Kanbrik 194 |
+| Sprintmoss domain | `sprintmoss.com` (parked, redirects to a marketplace) | `sprintmoss.app` |
+| `GET /brands/compass/competitors` | five real ones, then G2 75, LinkedIn 57, Google 54, YouTube 48, Marwick 6 | Pipewell 250, Closera 246, Dealvine 246, Leadquill 244, Salesmoor 237 |
+| `r_dc44bd5062834e` (Tasklane, gemini) mentions Plandrift, Boardhaven, Trellova, Amazon and Reddit | counts towards Amazon and Reddit as competitors | counts towards Plandrift, Boardhaven and Trellova only |
+| `r_03e0508f6029dd` (Tasklane, google_aio) lists `Sprintmoss (sprintmoss.com)`, YouTube, Zoom, Google | was not stored at all (problem 1) | counts towards Taskwyn, Boardhaven, Kanbrik and Sprintmoss |
+
+The counts went up for real competitors because problems 1 and 2 are fixed: the previously dropped answers are now included and nothing is counted twice.
+
+**How I checked.** `test/competitors.test.ts` asserts the exact Tasklane list with domains and counts, that no platform is in it, that classifying Tasklane takes exactly 16 LLM calls (15 names plus one rate-limit retry), that repeated and concurrent requests cost no further calls, that Inkpond is kept with `inkpond.com`, that Pipewell shows `pipewell.io`, and that all eight brands together stay under 90 calls. The expected counts in the test came from an independent script over the raw feed, not from the new code.
+
 ## Problems found but not fixed
 
 _To be completed._

@@ -49,16 +49,3 @@ export function visibility(brandId: string, days: number, now: string = today())
   }
   return { brandId, days, from, to, byModel, overall: { answers, mentioned, visibility: answers ? mentioned / answers : 0 } };
 }
-
-// A brand's competitors: the brands named most often alongside it.
-export function competitors(brandId: string) {
-  const counts = new Map<string, { name: string; domain: string | null; mentions: number }>();
-  for (const a of answersFor(brandId)) {
-    for (const m of a.mentions) {
-      const c = counts.get(m.name) ?? { name: m.name, domain: m.domain, mentions: 0 };
-      c.mentions++;
-      counts.set(m.name, c);
-    }
-  }
-  return [...counts.values()].sort((x, y) => y.mentions - x.mentions).slice(0, 10);
-}
