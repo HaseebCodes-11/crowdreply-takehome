@@ -29,6 +29,9 @@ export interface VendorMention {
   position: number;
 }
 
+// Why we do not count an answer: the fetch failed, or the model returned nothing usable.
+export type FailureReason = 'http_error' | 'empty_text' | 'prompt_echo' | 'refusal';
+
 // One answer as we store it.
 export interface Answer {
   id: string;
@@ -38,6 +41,7 @@ export interface Answer {
   fetchedAt: string;
   day: string; // YYYY-MM-DD, UTC
   status: 'ok' | 'failed';
+  failureReason: FailureReason | null; // why status is 'failed', null when it is 'ok'
   text: string;
   ownBrandMentioned: boolean;
   mentions: Mention[]; // other brands named in the answer

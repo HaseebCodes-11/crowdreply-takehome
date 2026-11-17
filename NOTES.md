@@ -77,6 +77,31 @@ After this fix every brand has exactly 84 counted answers per model in the 30-da
 
 **How I checked.** `test/metrics.test.ts` pins the end of the window to 2026-11-11 and asserts that every counted answer is dated Nov 10 or Nov 11 and that no model has more than 6 answers.
 
+### 4. A ChatGPT outage was counted as "brand not mentioned" (Fieldnote's complaint)
+
+**Symptom.** "ChatGPT visibility fell to almost nothing on Tuesday and came back on Thursday."
+
+**Root cause.** `toAnswer()` in `src/ingest.ts` marked an answer `failed` only when `httpStatus` was not 200. Every one of the 3,609 answers in the feed has `httpStatus: 200`, so nothing was ever failed. On Tuesday 2026-11-10 and Wednesday 2026-11-11 ChatGPT returned junk for 17 of 24 and 16 of 24 answers across all eight brands, and none on the days either side. The junk comes in three shapes: empty text, the sentence "I don't have search results for that query right now.", or the prompt echoed back as the answer. Each was stored as a normal answer that did not mention the brand, which pulled visibility down. Fieldnote noticed because all six of its ChatGPT answers on those two days were junk.
+
+This is not limited to the outage. 69 unique answers are junk: 33 from ChatGPT and 36 from Perplexity, which fails steadily at two or three answers a day.
+
+**Change.** New `src/failure.ts` with `failureReason()`. An answer is failed when the HTTP status is not 200 (`http_error`), the text is empty (`empty_text`), the text equals the prompt (`prompt_echo`), or the text is the refusal sentence (`refusal`). The stored answer gets a new `failureReason` field next to `status`, and `loadAll()` reports `failed` and `failedByReason`. Failed answers are stored and can be fetched, but no metric counts them.
+
+I chose exact rules on purpose. A broader rule such as "no brands and no citations" matches the same 69 answers today, but it would also discard a genuine answer that recommends nobody, and that answer is a real miss that visibility should count. The known limit is a refusal worded differently from the one in the feed. It would be counted as a miss until the pattern is added.
+
+**Examples.**
+
+| Answer | Before | After |
+|---|---|---|
+| `r_991f893225aecc` (Fieldnote, chatgpt, 2026-11-10), text is `""` | `status: "ok"`, counted as not mentioned | `status: "failed"`, `failureReason: "empty_text"` |
+| `r_c75b21627ed4b4` (Fieldnote, chatgpt, 2026-11-10), text is "I don't have search results for that query right now." | `status: "ok"` | `status: "failed"`, `failureReason: "refusal"` |
+| `r_7424f93ca93846` (Fieldnote, chatgpt, 2026-11-11), text is its own prompt "tool to organise interview notes and tag insights" | `status: "ok"` | `status: "failed"`, `failureReason: "prompt_echo"` |
+| Fieldnote ChatGPT on Nov 10 and 11 (`NOW=2026-11-11`, `days=2`) | 6 answers, 0 mentioned, visibility 0 | 0 answers, which is "no data" and not 0% |
+| Fieldnote ChatGPT, 30 days | 44 of 84 (52.4%) | 44 of 78 (56.4%) |
+| `loadAll()` | no failed answers | `failed: 69`, `{ prompt_echo: 36, refusal: 23, empty_text: 10 }` |
+
+**How I checked.** `test/failure.test.ts` covers each rule on hand-made input, asserts the three answers above, asserts the 69 total and its split, and asserts that all 69 failed answers have no mentions and no citations (so no real answer was caught). It also asserts that a real answer naming no brand is not a failure. My first version of the test had the wrong split because I had counted duplicates. The test failed and I corrected the expectation after checking it against the feed.
+
 ## Problems found but not fixed
 
 _To be completed._

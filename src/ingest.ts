@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { DATA_DIR } from './config.ts';
 import { isOwnBrandMentioned } from './detect.ts';
+import { failureReason } from './failure.ts';
 import { getBrand, saveAnswer, saveBrands } from './store.ts';
 import { MODELS, type Answer, type Brand, type Model, type VendorMention, type VendorResponse } from './types.ts';
 
@@ -23,6 +24,8 @@ export interface IngestStats {
   skippedByReason: Record<string, number>;
   duplicates: number; // repeat deliveries of an id we already had
   conflictingDuplicates: number; // repeats whose content differed from the first copy
+  failed: number; // stored, but marked 'failed' and left out of every metric
+  failedByReason: Record<string, number>;
 }
 
 function isRecord(v: unknown): v is Record<string, unknown> {
@@ -68,6 +71,7 @@ export function checkResponse(raw: unknown): VendorResponse {
 }
 
 function toAnswer(raw: VendorResponse, brand: Brand): Answer {
+  const failure = failureReason(raw);
   return {
     id: raw.id,
     brandId: raw.brandId,
@@ -75,7 +79,8 @@ function toAnswer(raw: VendorResponse, brand: Brand): Answer {
     prompt: raw.prompt,
     fetchedAt: raw.fetchedAt,
     day: new Date(raw.fetchedAt).toISOString().slice(0, 10),
-    status: raw.httpStatus === 200 ? 'ok' : 'failed',
+    status: failure ? 'failed' : 'ok',
+    failureReason: failure,
     text: raw.text,
     ownBrandMentioned: isOwnBrandMentioned(raw.text, brand, raw.isMentioned),
     mentions: raw.mentions.filter((m) => m.name !== brand.name).map((m) => ({ name: m.name, domain: m.domain, position: m.position })),
@@ -100,7 +105,7 @@ export async function loadAll(): Promise<IngestStats> {
   saveBrands(brands);
 
   const feedDir = path.join(DATA_DIR, 'feed');
-  const stats: IngestStats = { brands: brands.length, saved: 0, skipped: 0, skippedByReason: {}, duplicates: 0, conflictingDuplicates: 0 };
+  const stats: IngestStats = { brands: brands.length, saved: 0, skipped: 0, skippedByReason: {}, duplicates: 0, conflictingDuplicates: 0, failed: 0, failedByReason: {} };
   const skip = (reason: string) => {
     stats.skipped++;
     stats.skippedByReason[reason] = (stats.skippedByReason[reason] ?? 0) + 1;
@@ -142,15 +147,22 @@ export async function loadAll(): Promise<IngestStats> {
   }
 
   for (const raw of unique.values()) {
-    saveAnswer(toAnswer(raw, getBrand(raw.brandId)!));
+    const answer = toAnswer(raw, getBrand(raw.brandId)!);
+    saveAnswer(answer);
     stats.saved++;
+    if (answer.failureReason) {
+      stats.failed++;
+      stats.failedByReason[answer.failureReason] = (stats.failedByReason[answer.failureReason] ?? 0) + 1;
+    }
   }
   return stats;
 }
 
 // One line for the startup log.
 export function describeStats(s: IngestStats): string {
-  const reasons = Object.entries(s.skippedByReason).map(([r, n]) => `${r}: ${n}`).join(', ');
+  const list = (counts: Record<string, number>) => Object.entries(counts).map(([r, n]) => `${r}: ${n}`).join(', ');
+  const reasons = list(s.skippedByReason);
+  const failures = s.failed ? ` ${s.failed} answers are marked failed and not counted (${list(s.failedByReason)}).` : '';
   const conflicts = s.conflictingDuplicates ? `, ${s.conflictingDuplicates} of them with different content` : '';
-  return `Loaded ${s.brands} brands and ${s.saved} answers (${s.skipped} skipped${reasons ? `: ${reasons}` : ''}; ${s.duplicates} duplicate deliveries ignored${conflicts}).`;
+  return `Loaded ${s.brands} brands and ${s.saved} answers (${s.skipped} skipped${reasons ? `: ${reasons}` : ''}; ${s.duplicates} duplicate deliveries ignored${conflicts}).${failures}`;
 }
