@@ -1,6 +1,6 @@
 import http from 'node:http';
 import { PORT } from './config.ts';
-import { loadAll } from './ingest.ts';
+import { describeStats, loadAll } from './ingest.ts';
 import { competitors, visibility } from './metrics.ts';
 import { getAnswer, getBrand, listBrands } from './store.ts';
 
@@ -50,6 +50,6 @@ export function createServer() {
 
 if (process.argv[1]?.endsWith('server.ts')) {
   const stats = await loadAll();
-  console.log(`Loaded ${stats.brands} brands and ${stats.saved} answers (${stats.skipped} skipped).`);
+  console.log(describeStats(stats));
   createServer().listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
 }
