@@ -102,6 +102,33 @@ I chose exact rules on purpose. A broader rule such as "no brands and no citatio
 
 **How I checked.** `test/failure.test.ts` covers each rule on hand-made input, asserts the three answers above, asserts the 69 total and its split, and asserts that all 69 failed answers have no mentions and no citations (so no real answer was caught). It also asserts that a real answer naming no brand is not a failure. My first version of the test had the wrong split because I had counted duplicates. The test failed and I corrected the expectation after checking it against the feed.
 
+### 5. Own-brand detection trusted the vendor and matched exact strings (Compass's and Bark & Bloom's complaints)
+
+**Symptom.** Compass: "Our visibility looks too good to be true. When we open the answers, a lot of them don't mention us at all." Bark & Bloom: "This answer is literally about us, and your dashboard says we weren't mentioned."
+
+**Root cause.** Two lines in `isOwnBrandMentioned()` in `src/detect.ts`, one for each complaint.
+
+1. `if (vendorSaysMentioned) return true;` trusted the vendor's `isMentioned` flag. That flag is a case-insensitive substring match. For Compass it fires on the ordinary word "compass". Of 258 answers the vendor flags for Compass, 188 name the brand as `**Compass** (compasscrm.io)` and 70 only use the noun (65 after removing duplicates). The vendor even adds Compass to `mentions[]` for those.
+2. `text.toLowerCase().includes(brand.name.toLowerCase())` looks for the exact string "bark & bloom". 55 unique answers name the brand another way: about half write "Bark and Bloom" and the rest name only the domain `barkandbloom.co`. The vendor's flag misses them for the same reason.
+
+**Change.** `isOwnBrandMentioned()` now decides from the text alone. The brand counts as named when the text contains its domain as a whole host, or its name as a whole word. Between the words of a name, "&" may be written "&", "and", "+" or "'n'", and a hyphen or space may be a hyphen, a space or nothing. A name that starts with a capital must be written with a capital, which is what separates Compass from a compass. The vendor's flag is still accepted as a third argument so no caller breaks, but it is ignored. It is stored on each answer as the new field `vendorIsMentioned` so the two can be compared.
+
+Known limit: a sentence that begins with the generic word, such as "Compass readings vary", would count as a mention. The feed has no such case. Requiring bold text or a nearby domain would close that gap, but it would also miss plain-prose mentions and tie detection to the current answer formatting, so I did not do it.
+
+**Examples.**
+
+| Answer | Before | After |
+|---|---|---|
+| `r_5421763f19a03a` (Compass, chatgpt). Recommends Salesmoor, Leadquill and Dealvine, then: "A clear ideal customer profile works like a compass for every rep." | `ownBrandMentioned: true` | `ownBrandMentioned: false`, `vendorIsMentioned: true` |
+| `r_6d33eefbe25360` (Compass, perplexity). "Good forecasting gives the whole team a compass, not just the managers." | `true` | `false` |
+| `r_ba4dcde1405aa2` (Bark & Bloom, chatgpt). "2. **Bark and Bloom**: a reliable all-rounder with responsive support." | `ownBrandMentioned: false` | `ownBrandMentioned: true`, `vendorIsMentioned: false` |
+| `r_81f61cfe3c1e34` (Bark & Bloom, gemini). "Many reviewers recommend barkandbloom.co; it is good value" | `false` | `true` |
+| Compass, 30 days | 239 of 412 (58.0%) | 174 of 412 (42.2%) |
+| Compass, 30 days, perplexity | 51 of 80 | 29 of 80 |
+| Bark & Bloom, 30 days | 107 of 415 (25.8%) | 160 of 415 (38.6%) |
+
+**How I checked.** `test/detect.test.ts` keeps the two original tests and adds cases for the common noun, capitalised and all-caps names, longer words ("Compassion", "encompass"), every way of writing the "&", hyphen variants, domain-only mentions and lookalike domains. `test/detect-feed.test.ts` runs against the real feed. It asserts the four answers above and, most importantly, that our result differs from the vendor's on exactly 65 Compass answers and 55 Bark & Bloom answers and on nothing for the other six brands. That shows the new detector changes only what was wrong.
+
 ## Problems found but not fixed
 
 _To be completed._

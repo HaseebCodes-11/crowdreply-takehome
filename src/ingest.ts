@@ -82,7 +82,8 @@ function toAnswer(raw: VendorResponse, brand: Brand): Answer {
     status: failure ? 'failed' : 'ok',
     failureReason: failure,
     text: raw.text,
-    ownBrandMentioned: isOwnBrandMentioned(raw.text, brand, raw.isMentioned),
+    ownBrandMentioned: isOwnBrandMentioned(raw.text, brand),
+    vendorIsMentioned: raw.isMentioned,
     mentions: raw.mentions.filter((m) => m.name !== brand.name).map((m) => ({ name: m.name, domain: m.domain, position: m.position })),
     citations: raw.citations,
   };

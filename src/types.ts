@@ -43,7 +43,8 @@ export interface Answer {
   status: 'ok' | 'failed';
   failureReason: FailureReason | null; // why status is 'failed', null when it is 'ok'
   text: string;
-  ownBrandMentioned: boolean;
+  ownBrandMentioned: boolean; // our own reading of the text, see detect.ts
+  vendorIsMentioned: boolean; // what the vendor claimed. Kept for audit, never used in a metric
   mentions: Mention[]; // other brands named in the answer
   citations: string[];
 }
